@@ -4,14 +4,49 @@
   <title>Elfinlau About Us</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
   <style></style>
   <body>
     <header>
-      <h1>About Us</h1>
+      <div>
+        <a href="index.html"
+          ><img src="images/1Index/logo.gif" alt="Elfinlau Logo" width="100" />
+        </a>
+      </div>
+      <!-- logo is here -->
+      <div class="herotextformat">
+        <h1>About Us</h1>
+      </div>
     </header>
+    <!-- Socials horizontal nav bar -->
     <nav>
       <div>
-        <ul>
+        <ul class="nav-list1">
+          <li>
+            <a href="https://www.facebook.com/elfinlau"
+              ><img
+                src="images/1Index/facebook-square-brands.svg"
+                alt="Facebook Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/2elfinlau/?hl=en"
+              ><img
+                src="images/1Index/instagram-square-brands.svg"
+                alt="Instagram Logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav>
+      <div>
+        <ul class="nav-list2">
           <li><a href="2AboutPage.html">About Us</a></li>
           <li>
             <a href="3BookingPage.html">Booking</a>
@@ -56,8 +91,8 @@
         <div>
           <h2>Adventure Awaits</h2>
           <p>Paragraph of CTA</p>
-          <form action="3BookingPage.html">
-            <input type="submit" value="View Accomodations" />
+          <form style="display: inline" action="3BookingPage.html" method="get">
+            <button>View Accomodations</button>
           </form>
         </div>
       </section>
@@ -110,9 +145,11 @@
 
           <!-- Google Maps Link -->
           <br />
-          <form action="3BookingPage.html">
-            <input type="submit" value="Book Now" />
+
+          <form style="display: inline" action="3BookingPage.html" method="get">
+            <button>Book Now</button>
           </form>
+
           <!-- CTA button for Fat Footer -->
         </div>
       </section>

@@ -1,7 +1,15 @@
 /* Header for Home Page */
 
+* {
+    font-family: 'Mohave', sans-serif;
+}
+
 body {
   margin: 0;
+}
+
+.herotextformat {
+    text-align: center;
 }
 
 /* Socials Nav Bar for Home Page */
