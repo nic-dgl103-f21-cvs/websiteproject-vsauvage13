@@ -1,0 +1,37 @@
+/* Header for Home Page */
+
+body {
+  margin: 0;
+}
+
+/* Socials Nav Bar for Home Page */
+
+nav {
+  background-color: rgb(63, 59, 59, 0.9);
+}
+
+.nav-list1 li {
+  display: inline;
+}
+
+.nav-list1 a img {
+  padding-right: 10px;
+  width: 1.5rem;
+  height: auto;
+  float: right;
+}
+
+/* Horizontal Nav Bar for Home Page */
+
+.nav-list2 li {
+  display: inline;
+}
+
+.nav-list2 a {
+  padding-right: 10px;
+  width: 1.5rem;
+  height: auto;
+  text-decoration: none;
+  color: #f7eade;
+  text-align: center;
+}
