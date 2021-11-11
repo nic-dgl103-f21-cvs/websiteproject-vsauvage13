@@ -11,146 +11,324 @@
       href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      header {
+        width: 98vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+        background-position: center center;
+        display: flex;
+        background-image: url(images/1Index/vidar-nordli-mathisen-641pLhGEEyg-unsplash.jpg);
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="heroimageformat">
-        <img
-          src="images/1Index/vidar-nordli-mathisen-641pLhGEEyg-unsplash.jpg"
-          alt="Lakeside Resort infront of mountains"
-          style="max-width: 100%; height: auto; max-height: 100%"
-        />
-      </div>
-      <!-- hero image will go hero background image of the header -->
-      <div>
-        <a href="index.html"
-          ><img src="images/1Index/logo.gif" alt="Elfinlau Logo" width="100" />
-        </a>
-      </div>
-      <!-- logo is here -->
-      <div class="herotextformat">
-        <h1>Welcome to Paradise</h1>
-        <h2>
-          Experience a private island getaway to refresh, ground, and relax.
-        </h2>
+    <div class="header">
+      <header>
+        <div>
+          <a href="index.html"
+            ><img
+              src="images/1Index/AllPages/logo.gif"
+              alt="Elfinlau Logo"
+              width="100"
+            />
+          </a>
+        </div>
+        <!-- logo is here -->
+        <div class="herotextformat">
+          <h1>Welcome to Paradise</h1>
+          <h2>
+            Experience a private island getaway to refresh, ground, and relax.
+          </h2>
 
-        <form style="display: inline" action="2AboutPage.html" method="get">
-          <button>Learn More</button>
-        </form>
+          <form style="display: inline" action="2AboutPage.html" method="get">
+            <button class="button-50">Learn More</button>
+          </form>
 
-        <form style="display: inline" action="3BookingPage.html" method="get">
-          <button>Book Now</button>
-        </form>
-        <!-- CTA Buttons -->
-      </div>
-    </header>
-    <!-- Socials horizontal nav bar -->
-    <nav>
-      <div>
+          <form style="display: inline" action="3BookingPage.html" method="get">
+            <button class="button-50">Book Now</button>
+          </form>
+          <!-- CTA Buttons -->
+        </div>
+      </header>
+      <!-- Socials horizontal nav bar -->
+      <nav class="nav1-container">
         <ul class="nav-list1">
           <li>
             <a href="https://www.facebook.com/elfinlau"
               ><img
-                src="images/1Index/facebook-square-brands.svg"
+                src="images/1Index/AllPages/facebook-square-brands.svg"
                 alt="Facebook Logo"
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/2elfinlau/?hl=en"
               ><img
-                src="images/1Index/instagram-square-brands.svg"
+                src="images/1Index/AllPages/instagram-square-brands.svg"
                 alt="Instagram Logo"
             /></a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- Horizontal navigation bar  for website pages-->
-    <nav class="wrapper6">
-      <div>
-        <ul class="nav-list2">
-          <li><a href="2AboutPage.html">About Us</a></li>
-          <li>
-            <a href="3BookingPage.html">Booking</a>
-            <ul>
-              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-              <li><a href="10Detox.html">5 Day Detox</a></li>
-            </ul>
-          </li>
-          <li><a href="4ThingsToDo.html"> Explore</a></li>
-          <li><a href="5ContactUsPage.html">Contact Us</a></li>
-          <li><a href="3BookingPage.html">Book Now</a></li>
-        </ul>
-      </div>
+    <nav>
+      <ul class="nav-list2">
+        <li><a href="2AboutPage.html">About Us</a></li>
+        <li>
+          <a href="3BookingPage.html">Booking</a>
+          <ul class="dropdown">
+            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+            <li><a href="10Detox.html">5 Day Detox</a></li>
+          </ul>
+        </li>
+        <li><a href="4ThingsToDo.html"> Explore</a></li>
+        <li><a href="5ContactUsPage.html">Contact Us</a></li>
+        <li><a href="3BookingPage.html">Book Now</a></li>
+      </ul>
     </nav>
+
     <main>
       <!-- div elements inside of sections and div elements for each piece that is a seperate column div not needed for everything toitles outside of div elements-->
-      <section class="home-accomodations">
-        <div>
+      <div class="dark-2column1">
+        <div class="dark-2column2">
           <h2>Plan Your Next Adventure</h2>
-          <p>This is a paragraph highlighing accomodations at Elfinlau</p>
-          <form action="3BookingPage.html">
-            <input type="submit" value="View Accomodations" />
+          <p>
+            With three unique, private cabins and the opportunity to book the
+            entire resort for you and your guests, there is truly something for
+            everyone to enjoy.
+          </p>
+          <form style="display: inline" action="3BookingPage.html" method="get">
+            <button class="button-50">View Accomodation</button>
           </form>
         </div>
         <div>
           <img
-            src="images/1Index/matthew-harris-yQoAlbuxb48-unsplash.jpg"
+            src="images/1Index/matthew-harris-yQoAlbuxb48-unsplash.png"
             alt="Red Cabin on the edge of a Lake"
-            style="width: 200px; height: auto"
+            style="width: 31.5rem; height: auto"
+            class="responsive"
           />
         </div>
-      </section>
-      <section class="home-aboutus">
+      </div>
+      <div class="light-2column1">
         <div>
           <img
-            src="Images/1Index/h-v-nHTBSnKKj9U-unsplash.jpg"
+            src="Images/1Index/h-v-nHTBSnKKj9U-unsplash.png"
             alt="Vintage Cabin by the Lake"
-            style="width: 200px; height: auto"
+            style="width: 31.5rem; height: auto"
+            class="responsive"
           />
         </div>
-        <div>
+        <div class="light-2column2">
           <h2>About Us</h2>
-          <p>This is a paragraph explaining the story of Elfinlau</p>
-          <form action="2AboutPage.html">
-            <input type="submit" value="Learn More" />
+          <p>
+            Welcome to Elfinlau Paradise. We are an off-the-grid eco-resort
+            located on the private Echo Island in beautiful Harrison Lake. Our
+            Island is 2400 acres of untrailed forest just waiting to be
+            explored.
+          </p>
+          <form style="display: inline" action="2AboutPage.html" method="get">
+            <button class="button-50">Learn More</button>
           </form>
         </div>
-      </section>
+      </div>
       <section class="home-statement">
-        <h2>This is a mission statement</h2>
+        <p>
+          Elfinlau Eco-Resort offers a memorable experience for travellers of
+          all kinds, providing a unique, eco-friendly cabin rental on the remote
+          and private Echo Island. Come as you are and leave feeling refreshed
+          and grounded.
+        </p>
       </section>
       <section class="home-amenities">
         <h2>Resort Amenities</h2>
-        <!-- row of imgs here -->
-        <form action="4ThingsToDo.html">
-          <input type="submit" value="Explore Elfinlau" />
-        </form>
-      </section>
-      <section class="home-meethosts">
         <div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/benjamin-davies-mqN-EV9rNlY-unsplash .png"
+                  alt="Kayaking on the lake in an orange kayak surrounded by mountains"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Kayaking</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/photo-1536502829567-baf877a670b5.png"
+                  alt="Woman holding stack of rings on thumb over box of Jewelry"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Jewelry Making</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/pexels-josh-hild-2629233.png"
+                  alt="Man hiking down a forest trail with mountains in the distance"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Hiking</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/pexels-max-vakhtbovych-7587466.png"
+                  alt="Light Wood Sauna with windows"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Finnish Sauna</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/pexels-cottonbro-3997995.png"
+                  alt="Woman laying on a table with another womans hands hovering around the sides of her face"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Reiki</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/conscious-design-VsI_74zRzAo-unsplash.png"
+                  alt="Woman sitting on wooden floor crosslegged holding up a tibetan singing bowl"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Crystal & Sound Healings</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/pexels-mikhail-nilov-6740753.png"
+                  alt="Woman rolling out green yoga mat"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Yoga Classes</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img
+                  src="Images/1Index/Amenities/photo-1485452499676-62ab02c20e83.png"
+                  alt="Man kneeling in water holding caught fish"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h3>Chartered Fishing Tours</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row of imgs here -->
+        <div class="home-amenities">
+          <form style="display: inline" action="4ThingsToDo.html" method="get">
+            <button class="button-50">Explore Elfinlau</button>
+          </form>
+        </div>
+      </section>
+      <section class="dark-2column1">
+        <div class="dark-2column2">
           <h2>Meet Your Hosts</h2>
+          <p>
+            Being the owners of a private island measuring over 2400 acres, they
+            couldn’t imagine not sharing it with the world. Marcella and Ray
+            both feel incredibly privileged to share their piece of paradise
+            with others.
+          </p>
         </div>
         <div>
           <img
-            src="images/1Index/pexels-marcus-aurelius-6787519.jpg"
+            src="images/1Index/pexels-marcus-aurelius-6787519.png"
             alt="Older couple standing together with hands in front of them"
-            style="width: 200px; height: auto"
+            style="width: 31.5rem; height: auto"
+            class="responsive"
           />
         </div>
       </section>
-      <section home="home-customertestimonials">
-        <h2>Customer Testimonials</h2>
-        <div>
-          <p>This is a customer testimonial</p>
-          <!-- img of customer -->
-        </div>
-        <div>
-          <p>This is a customer testimonial</p>
-          <!-- img of customer -->
+      <section class="light-4column1">
+        <div class="light-4column2">
+          <div>
+            <h2>Customer Testimonials</h2>
+            <div>
+              <p>
+                Harish and I would like to thank you for allowing us to
+                experience your private paradise! We had a wonderful time and
+                look forward to coming back and soaking in the new hot tub.
+                Every time we leave we are so in awe of what the two of you have
+                built. We are looking forward to seeing you soon, hopefully,
+                very soon. Until then take care.
+                <br />
+                Bal and Harish
+              </p>
+              <div>
+                <img
+                  src="images/1Index/Testimonials/esther-ann-glpYh1cWf0o-unsplash (1).png"
+                  alt="Older couple standing on beach kissing"
+                  style="width: 18rem; height: auto"
+                  class="responsive"
+                />
+              </div>
+            </div>
+            <div>
+              <p>
+                Thank you for the great weekend, we really got to relax and
+                enjoy ourselves at your beautiful paradise! I'm sending you a
+                couple of the pictures we took; the resort honestly did all the
+                work for us. It was so magical being able to name our own trail,
+                especially considering there aren’t many! “Le sentier moussu du
+                lac” which means “The Mossy Lake Trail”. Even more amazing was
+                having Ray make a sign for it the next day. <br />
+                So thank you so much for everything, we hope to see you soon!
+                <br />
+                Andréanne, Gilles, Karine and Karl
+              </p>
+              <div>
+                <img
+                  src="images/1Index/Testimonials/nate-johnston-UpVbQxDGO3I-unsplash (1).png"
+                  alt="Photo of Family standing on the Beach"
+                  style="width: 18rem; height: auto"
+                  class="responsive"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -202,8 +380,8 @@
 
           <!-- Google Maps Link -->
           <br />
-          <form action="3BookingPage.html">
-            <input type="submit" value="Book Now" />
+          <form style="display: inline" action="3BookingPage.html" method="get">
+            <button class="button-50">Book Now</button>
           </form>
           <!-- CTA button for Fat Footer -->
         </div>

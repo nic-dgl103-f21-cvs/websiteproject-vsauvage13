@@ -1,4 +1,6 @@
-/* Header for Home Page */
+/* ALL PAGES */
+
+/* Header for All Pages */
 
 * {
   font-family: "Mohave", sans-serif;
@@ -8,63 +10,81 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: white;
+}
+
+.header {
+  position: relative;
 }
 
 .herotextformat {
   text-align: center;
+  margin-top: 10rem;
+  margin-left: 3.5rem;
+  color: #f7eade;
+  text-shadow: 0.1rem 0.1rem black;
+  font-size: large;
 }
 
-.heroimageformat {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: auto;
+/* Socials Nav Bar for All Pages */
+
+.nav1-container {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-/* Socials Nav Bar for Home Page */
+.nav-list1 {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
 
 .nav-list1 li {
   display: inline;
+  float: right;
 }
 
 .nav-list1 a img {
   padding-right: 10px;
-  width: 1.5rem;
+  padding-left: 10px;
+  width: 2rem;
   height: auto;
-  float: right;
 }
 
-/* Main Horizontal Nav Bar for Home Page */
+.nav-list1 li a img:hover {
+  background-color: rgb(247, 234, 222, 0.4);
+}
+
+/* Look up image that is different colour might need javascript, or look up sprites */
+
+/* Main Horizontal Nav Bar for All Pages */
 
 .nav-list2 {
   background-color: rgb(63, 59, 59, 0.6);
-}
-
-.wrapper6 {
-  width: 900px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-list2 ul {
   list-style-type: none;
-  overflow: auto;
   margin: 0;
   padding: 0;
-  display: flex;
+  overflow: hidden;
 }
 
 .nav-list2 li {
   font-size: small;
   list-style-type: none;
   text-decoration: none;
+  float: right;
 }
 
 .nav-list2 li a {
   padding: 15px;
-  display: inline-block;
   color: #191645;
+  text-decoration: none;
 }
 
 .nav-list2 li a:hover {
@@ -72,12 +92,78 @@ body {
   color: white;
 }
 
-/* Horizontal Nav Bar for Home Page */
-/*  
-.nav-list2 li {
-  display: inline;
+/* Button #50 copied from getcssscan.com with slight adjustments to colour and font */
+
+.button-50 {
+  background-color: #2a2828;
+  background-image: none;
+  border: 1px solid #2a2828;
+  border-radius: 4px;
+  box-shadow: #f7eade 4px 4px 0 0, #2a2828 4px 4px 0 1px;
+  box-sizing: border-box;
+  font-variant: small-caps;
+  color: #f7eade;
+  font-family: "Mohave", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+  background-color: #f7eade;
+  color: #2a2828;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fbf5ef 2px 2px 0 0, #2a2828 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+/* End of Button */
+
+/* 
+.nav-list2 ul ul {
+   position: absolute;
+   background-color: white;
+   padding: 0;
+   text-align: left;
+   display: none;
+}
+
+.nav-list2 ul ul li {
+   display: block;
+   width: 7em;
+   padding-left: 1em;
+   margin-left: 0;
+}
+ */
+/* Horizontal Nav Bar for Home Page */
+/*  
 .nav-list2 a {
   padding-right: 10px;
   width: 1.5rem;
@@ -88,26 +174,190 @@ body {
 }
 */
 
-/* Accomodations section on Home Page */
+/* Dark Coloured 2 Column Layout for all Pages */
 
-.home-accomodations {
-    background-color: white;
+.dark-2column1 {
+  background-color: #3f3b3b;
+  clear: both;
+  display: flex;
+  margin: 0px;
+  width: calc(100vw-1rem);
+  justify-content: space-between;
 }
+
+.dark-2column2 {
+  flex-direction: column;
+  max-width: 50vw;
+  color: #f7eade;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+
+/* Light Coloured 2 Column Layout for all Pages */
+
+.light-2column1 {
+  background-color: #f7eade;
+  clear: both;
+  display: flex;
+  margin: 0px;
+  width: calc(100vw-1rem);
+  justify-content: space-between;
+}
+
+.light-2column2 {
+  flex-direction: column;
+  max-width: 50vw;
+  color: #2a2828;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+
+/* Light Colourd 4 Column Layout for All Pages */
+
+.light-4column1 {
+  background-color: #f7eade;
+  clear: both;
+  display: flex;
+  margin: 0px;
+  width: calc(100vw-1rem);
+  justify-content: space-between;
+  flex-direction: row-reverse;
+ 
+}
+
+.light-4column2 {
+  max-width: 25vw;
+  color: #2a2828;
+  text-align: center;
+  margin: 3rem;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* HOME PAGE */
 
 /* About Us section on Home Page */
 
 .home-aboutus {
-    background-color: #3f3b3b;
+  background-color: white;
+  clear: both;
 }
 
 /* Statement section on Home Page */
 
-
+.home-statement {
+  background-color: #3f3b3b;
+  margin: 0;
+  width: calc(100vw-1rem);
+  text-align: center;
+  height: 15rem;
+  color: #f7eade;
+  font-size: x-large;
+}
 
 /* Amenities section on Home Page */
 
+.home-amenities {
+  background-color: #f7eade;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/* Cards within Amenities section */
+
+/* Columns side by side */
+.column {
+  float: left;
+  width: 22%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 0.9rem;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Meet Your Hosts section on Home Page */
+
 
 /* Customer Testimonials section on Home Page */
 
+.home-testimonials {
+  background-color: white;
+}
+
+/* ABOUT PAGE */
+
+/* Our Story section on About Page */
+
+.about-ourstory {
+}
+
+/* Meet Your Hosts Section on About Page */
+
+.about-meethosts {
+}
+
+/* BOOKING PAGE */
+
+/* Cabins Section for Booking Page */
+
+.booking-cabins {
+}
+
+/* Packages Section for Booking Page */
+
+.booking-packages {
+}
+
+/* Features Section for Booking page */
+
+.booking-features {
+}
+
+/* Gallery Section for Booking Page */
+
+.booking-gallery {
+}
+
+/* CTA Section for all Pages */
+
+.main-cta {
+}
+
 /* Fat Footer for all Pages */
+
+.fat-footer {
+  background-color: rgb(63, 59, 59, 0.6);
+}
