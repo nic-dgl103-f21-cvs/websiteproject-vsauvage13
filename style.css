@@ -24,6 +24,7 @@ body {
   color: #f7eade;
   text-shadow: 0.1rem 0.1rem black;
   font-size: large;
+  
 }
 
 /* Socials Nav Bar for All Pages */
@@ -226,7 +227,6 @@ body {
   width: calc(100vw-1rem);
   justify-content: space-between;
   flex-direction: row-reverse;
- 
 }
 
 .light-4column2 {
@@ -310,7 +310,6 @@ body {
 
 /* Meet Your Hosts section on Home Page */
 
-
 /* Customer Testimonials section on Home Page */
 
 .home-testimonials {
@@ -360,4 +359,16 @@ body {
 
 .fat-footer {
   background-color: rgb(63, 59, 59, 0.6);
+}
+
+.fat-footer ul li {
+  list-style-type: none;
+  color: #2a2828;
+}
+.fat-footer ul li a {
+  text-decoration: underline;
+  color: #2a2828;
+}
+.fat-footer ul li a:hover {
+  color: #f7eade;
 }
