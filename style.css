@@ -4,6 +4,7 @@
 
 * {
   font-family: "Mohave", sans-serif;
+  
 }
 
 body {
@@ -137,12 +138,6 @@ body {
 .button-50:not([disabled]):active {
   box-shadow: #fbf5ef 2px 2px 0 0, #2a2828 2px 2px 0 1px;
   transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-  .button-50 {
-    padding: 12px 50px;
-  }
 }
 
 /* End of Button */
@@ -357,18 +352,99 @@ body {
 
 /* Fat Footer for all Pages */
 
-.fat-footer {
-  background-color: rgb(63, 59, 59, 0.6);
+.footer-dark {
+  color: #f7eade;
+  background-color: rgb(42, 40, 40, 0.9);
+  width: 99vw;
 }
 
-.fat-footer ul li {
-  list-style-type: none;
-  color: #2a2828;
+.footer-dark .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  flex-grow: 1;
+  max-width: 100vw;
 }
-.fat-footer ul li a {
-  text-decoration: underline;
-  color: #2a2828;
+
+.footer-dark .column {
+  margin-top: 2rem;
+  width: 10rem;
+  text-align: left;
 }
-.fat-footer ul li a:hover {
-  color: #f7eade;
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 25px;
 }
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+.footer-dark .item.text ul li {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-socials-container {
+  width: 7rem;
+  padding-right: 1rem;
+  padding-left: 1rem ;
+  margin: auto;
+}
+
+.footer-socials {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.footer-socials li {
+  display: inline;
+}
+
+.footer-socials a img {
+  padding-right: .625rem;
+  padding-left: .625rem;
+  width: 2rem;
+  height: auto;
+}
+
+.footer-socials a img:hover {
+  background-color: rgb(247, 234, 222, 0.4);
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  opacity: 0.3;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* ALL FOOTER COLUMNS ARE THE SAME WDITH TROUBLE SHOOT FOR AESTHETICS */
