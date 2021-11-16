@@ -63,36 +63,36 @@
     </nav>
     <!-- Horizontal navigation bar for websites pages-->
     <nav>
-      <div>
-        <ul class="nav-list2">
-          <li><a href="2AboutPage.html">About Us</a></li>
-          <li>
-            <a href="3BookingPage.html">Booking</a>
-            <ul>
-              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-              <li><a href="10Detox.html">5 Day Detox</a></li>
-            </ul>
-          </li>
-          <li><a href="4ThingsToDo.html"> Explore</a></li>
-          <li><a href="5ContactUsPage.html">Contact Us</a></li>
-          <li><a href="3BookingPage.html">Book Now</a></li>
-        </ul>
-      </div>
+      <ul class="nav-list2">
+        <li><a href="2AboutPage.html">About Us</a></li>
+        <li>
+          <a href="3BookingPage.html">Booking</a>
+          <ul class="dropdown">
+            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+            <li><a href="10Detox.html">5 Day Detox</a></li>
+          </ul>
+        </li>
+        <li><a href="4ThingsToDo.html"> Explore</a></li>
+        <li><a href="5ContactUsPage.html">Contact Us</a></li>
+        <li><a href="3BookingPage.html">Book Now</a></li>
+      </ul>
     </nav>
     <main>
       <!-- Our Story section starts here -->
-      <section>
+      <section class="text-block">
         <div>
-          <!-- ask here do titles go in different div if they want to be centered and then have 2 columns underneath -->
           <h2>Our Story</h2>
           <p>
             Marcella and Ray started with just an idea and a desire. They both
             owned a large piece of property on Harrison Lake and decided that
             they couldn't just keep it to themselves. They wanted to share their
-            piece of paradise with others to enjoy. <br />
+            piece of paradise with others to enjoy.
+          </p>
+
+          <p>
             They started working on the Elfinlau Resort at the beginning of
             2003, converting a corner of their private island to the eco-resort
             that they had always dreamed of. After 3 years of travelling back
@@ -101,47 +101,65 @@
             property, adding new amenities every couple of months. The most
             recent of these include the off-the-grid Finnish Sauna House, and
             the Dreamweaver Studio used for a multitude of different classes,
-            like jewelry making and yoga. <br />
+            like jewelry making and yoga.
+          </p>
+
+          <p>
             They opened their doors to the public in late 2006. Since then, they
             have had people from all over the world stay at Elfinlau. Marcella
             and Ray both feel incredibly privileged to share their private piece
             of paradise with others.
           </p>
-          <!-- img here -->
         </div>
       </section>
       <!-- Meet Your Hosts section starts here -->
-      <div>
+      <section class="light-2cards-container">
         <h2>Meet Your Hosts</h2>
         <h3>Marcella & Ray</h3>
-        <p>
-          Marcella was born and raised in the Harrison Lake area. She prides
-          herself on knowing the local land and its inhabitants well. Marcella
-          became quickly certified in many practices including becoming a
-          certified Reiki Master and Yoga Instructor. She has always had a
-          passion for hosting and designed Elfinlau with this at the forefront
-          of her mind.
-        </p>
-        <img
-          src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787203.jpg"
-          alt="Woman in teal yoga clothes standing in a Warrior 1 Pose "
-          style="width: 31.5rem; height: auto"
-          class="responsive"
-        />
-        <p>
-          Ray moved to Canada from Finland in 1993 and met Marcella shortly
-          after. Ray worked as a Carpenter for 2 decades before becoming a
-          General Contracter for 8 years. Ray brought his professional knowledge
-          to the construction of Elfinlau, building the cabins and the sauna
-          from scratch.
-        </p>
-        <img
-          src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787408.jpg"
-          alt="Man in grey and black yoga clothes sitting on a yoga mat in a Lotus Pose "
-          style="width: 31.5rem; height: auto"
-          class="responsive"
-        />
-      </div>
+        <div class="light-2cards">
+          <div>
+            <div class="card">
+              <img
+                src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787203.jpg"
+                alt="Woman in teal yoga clothes standing in a Warrior 1 Pose "
+                style="width: 100%"
+                class="responsive"
+              />
+              <div class="cardp">
+                <p>
+                  Marcella was born and raised in the Harrison Lake area. She
+                  prides herself on knowing the local land and its inhabitants
+                  well. Marcella became quickly certified in many practices
+                  including becoming a certified Reiki Master and Yoga
+                  Instructor. She has always had a passion for hosting and
+                  designed Elfinlau with this at the forefront of her mind.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <img
+                src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787408.jpg"
+                alt="Man in grey and black yoga clothes sitting on a yoga mat in a Lotus Pose "
+                style="width: 100%"
+                class="responsive"
+              />
+              <div class="cardp">
+                <p>
+                  Ray moved to Canada from Finland in 1993 and met Marcella
+                  shortly after. Ray worked as a Carpenter for 2 decades before
+                  becoming a General Contracter for 8 years. Ray brought his
+                  professional knowledge to the complete construction of
+                  Elfinlau, building the cabins and the sauna from scratch,
+                  keeping up on the maintenance, and doing renovations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- CTA section starts here -->
       <div class="main-cta">
         <h2>Adventure Awaits.</h2>

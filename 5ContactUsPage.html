@@ -61,24 +61,22 @@
     </nav>
     <!-- Horizontal navigation bar for websites pages-->
     <nav>
-      <div>
-        <ul class="nav-list2">
-          <li><a href="2AboutPage.html">About Us</a></li>
-          <li>
-            <a href="3BookingPage.html">Booking</a>
-            <ul>
-              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-              <li><a href="10Detox.html">5 Day Detox</a></li>
-            </ul>
-          </li>
-          <li><a href="4ThingsToDo.html"> Explore</a></li>
-          <li><a href="5ContactUsPage.html">Contact Us</a></li>
-          <li><a href="3BookingPage.html">Book Now</a></li>
-        </ul>
-      </div>
+      <ul class="nav-list2">
+        <li><a href="2AboutPage.html">About Us</a></li>
+        <li>
+          <a href="3BookingPage.html">Booking</a>
+          <ul class="dropdown">
+            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+            <li><a href="10Detox.html">5 Day Detox</a></li>
+          </ul>
+        </li>
+        <li><a href="4ThingsToDo.html"> Explore</a></li>
+        <li><a href="5ContactUsPage.html">Contact Us</a></li>
+        <li><a href="3BookingPage.html">Book Now</a></li>
+      </ul>
     </nav>
     <main>
       <!-- Google Maps Bar -->
@@ -112,6 +110,79 @@
           />
         </div>
       </div>
+
+      <div class="dark-2column">
+        <div class="column1">
+          <h2>Plan Your Next Adventure</h2>
+          <p>
+            With three unique, private cabins and the opportunity to book the
+            entire resort for you and your guests, there is truly something for
+            everyone to enjoy.
+          </p>
+          <div class="button">
+            <form
+              style="display: inline"
+              action="3BookingPage.html"
+              method="get"
+            >
+              <button class="button-50">View Accomodation</button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-container">
+          <form action="/action_page.php">
+            <label for="country">Subject</label>
+            <select id="country" name="country">
+              <option value="cabins">Cabins</option>
+              <option value="packages">Packages</option>
+              <option value="features">Room and Booking Features</option>
+              <option value="experiences">Experiences</option>
+            </select>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+
+            <label for="subject">Your Message</label>
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+            <p>
+              I want to receive information on upcoming deals, events, and news
+              from Elfinlau.
+            </p>
+            <form action="index.php">
+              <input type="checkbox" name="option" value="yes" /> Yes<br />
+              <input type="checkbox" name="option" value="no" /> No<br />
+            </form>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
       <!-- CTA Section starts here -->
       <div class="main-cta">
         <h2>Adventure Awaits.</h2>
