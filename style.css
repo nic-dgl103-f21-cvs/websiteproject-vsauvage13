@@ -11,6 +11,7 @@ body {
   padding: 0;
   height: 100vh;
   background-color: white;
+  width: 99.7vw;
 }
 
 .header {
@@ -75,7 +76,7 @@ nav {
 
 .nav-list2 {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
   display: block;
   padding: 0;
@@ -114,20 +115,17 @@ nav {
 }
 
 .nav-list2 ul li ul {
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
   left: 0;
-  display: block;
+  display: none;
 }
 
-.nav-list2 ul li:hover > .nav-list2 ul,
-.nav-list2 ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
+li:hover .dropdown {
   display: block;
 }
 
@@ -465,6 +463,82 @@ nav {
   list-style-type: none;
 }
 
+/* THINGS TO DO PAGE */
+
+/* Dark 2 Card Layout for Things to Do in Harrison Lke section on Things to Do Page*/
+
+.dark-2cards-container {
+  background-color: #343232;
+  padding-top: 1rem;
+  width: 100vw;
+  color: #f7eade;
+}
+
+.dark-2cards-container h2 {
+  font-size: 3.5vw;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dark-2cards-container h3 {
+  font-size: 3vw;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dark-2cards-container p {
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.dark-2cards {
+  background-color: #343232;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.dark-2cards .card {
+  width: 40vw;
+  margin-bottom: 3rem;
+}
+
+.dark-2cards .cardp {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.dark-2cards .cardp ul li {
+  font-size: 1.5vw;
+}
+
+.dark-2cards .cardp ul li {
+  text-align: left;
+  list-style-type: circle;
+}
+
+.dark-2cards .cardp ul li a {
+  color: #f7eade;
+  text-decoration: none;
+}
+
+.dark-2cards .cardp ul li a:hover {
+  color: #dc6641;
+  text-decoration: none;
+}
+
+.dark-2cards .cardp::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* CONTACT US PAGE */
 
 /* Google Maps Bar */
@@ -482,6 +556,42 @@ nav {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+/* Contact us Form Container */
+
+.form-container {
+  color: #f7eade;
+  background-color: #343232;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+}
+
+.form-container .column1 {
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 3.5vw;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-container p {
+  font-size: 1.5vw;
+  text-align: left;
+  text-align: center;
+}
+.contact-container {
+  height: 75vh;
+  font-size: 1.5vw;
 }
 
 /* Contact Us Form */
@@ -515,9 +625,12 @@ input[type="submit"]:hover {
 
 .contact-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fbf5ef;
   padding: 20px;
   width: 50vw;
+  color: #2a2828;
+  position: relative;
+  margin: auto;
 }
 
 /* CTA Section for all Pages */
