@@ -12,7 +12,7 @@
   />
   <style>
     header {
-      width: calc(100vw-2rem);
+      width: 100vw;
       height: 100vh;
       position: relative;
       overflow: hidden;
@@ -23,6 +23,7 @@
       background-size: cover;
     }
   </style>
+  <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
     <header>
       <div>
@@ -58,6 +59,7 @@
         </li>
       </ul>
     </nav>
+    <!-- Horizontal navigation bar for websites pages-->
     <nav>
       <div>
         <ul class="nav-list2">
@@ -79,9 +81,44 @@
       </div>
     </nav>
     <main>
-      <div>
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
+      <!-- Google Maps Bar -->
+      <div class="maps-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10397.10095332128!2d-121.7909276!3d49.3469389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7d7c95d8abed24c!2sElfinlau%20Waterfront%20Cabin%20%26%20Cottage%20Rental!5e0!3m2!1sen!2sca!4v1635274391806!5m2!1sen!2sca"
+          width="auto"
+          height="auto"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="light-2column">
+        <div class="column1">
+          <h2>Paradise on Harrison Lake</h2>
+          <ul>
+            <li>
+              Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0, Canada
+            </li>
+            <li>stay@elfinlau.com</li>
+            <li>+1 604-798-2244</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="images/5ContactUs/mischa-bachmann-rWLDSCo8p8g-unsplash.jpg"
+            alt="Elfinalu Resort from afar. Views of the mountains in the background and the cabins along the water."
+            style="width: 50vw; height: auto; margin: 0%"
+            class="responsive"
+          />
+        </div>
+      </div>
+      <!-- CTA Section starts here -->
+      <div class="main-cta">
+        <h2>Adventure Awaits.</h2>
+        <p>Don't wait any longer to make unforgettable memories.</p>
+        <form style="display: inline" action="3BookingPage.html" method="get">
+          <button class="button-50">View Accomodations</button>
+        </form>
       </div>
     </main>
     <!-- Start of Footer Bar -->
@@ -109,11 +146,10 @@
             <h3>Elfinlau Eco-Resort</h3>
             <ul>
               <li>
-                Address: Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0,
-                Canada
+                Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0, Canada
               </li>
-              <li>Email: stay@elfinlau.com</li>
-              <li>Phone Number: +1 604-798-2244</li>
+              <li>stay@elfinlau.com</li>
+              <li>+1 604-798-2244</li>
             </ul>
           </div>
           <div class="column item text">

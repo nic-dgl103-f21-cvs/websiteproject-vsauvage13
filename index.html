@@ -13,7 +13,7 @@
     />
     <style>
       header {
-        width: 98vw;
+        width: 100vw;
         height: 100vh;
         position: relative;
         overflow: hidden;
@@ -24,6 +24,7 @@
         background-size: cover;
       }
     </style>
+    <!-- Inline style sheet formats hero image for individual pages. -->
   </head>
   <body>
     <div class="header">
@@ -37,7 +38,8 @@
             />
           </a>
         </div>
-        <!-- logo is here -->
+        <!-- Website Logo is above -->
+        <!-- index link doesn't work. troubleshoot. -->
         <div class="herotextformat">
           <h1>Welcome to Paradise</h1>
           <h2>
@@ -74,7 +76,7 @@
         </ul>
       </nav>
     </div>
-    <!-- Horizontal navigation bar  for website pages-->
+    <!-- Horizontal navigation bar for websites pages-->
     <nav>
       <ul class="nav-list2">
         <li><a href="2AboutPage.html">About Us</a></li>
@@ -96,37 +98,45 @@
 
     <main>
       <!-- div elements inside of sections and div elements for each piece that is a seperate column div not needed for everything toitles outside of div elements-->
-      <div class="dark-2column1">
-        <div class="dark-2column2">
+
+      <div class="dark-2column">
+        <div class="column1">
           <h2>Plan Your Next Adventure</h2>
           <p>
             With three unique, private cabins and the opportunity to book the
             entire resort for you and your guests, there is truly something for
             everyone to enjoy.
           </p>
-          <form style="display: inline" action="3BookingPage.html" method="get">
-            <button class="button-50">View Accomodation</button>
-          </form>
+          <div class="button">
+            <form
+              style="display: inline"
+              action="3BookingPage.html"
+              method="get"
+            >
+              <button class="button-50">View Accomodation</button>
+            </form>
+          </div>
         </div>
         <div>
           <img
             src="images/1Index/matthew-harris-yQoAlbuxb48-unsplash.png"
             alt="Red Cabin on the edge of a Lake"
-            style="width: 31.5rem; height: auto"
+            style="width: 50vw; height: auto"
             class="responsive"
           />
         </div>
       </div>
-      <div class="light-2column1">
+
+      <div class="light-2column">
         <div>
           <img
             src="Images/1Index/h-v-nHTBSnKKj9U-unsplash.png"
             alt="Vintage Cabin by the Lake"
-            style="width: 31.5rem; height: auto"
+            style="width: 50vw; height: auto"
             class="responsive"
           />
         </div>
-        <div class="light-2column2">
+        <div class="column1">
           <h2>About Us</h2>
           <p>
             Welcome to Elfinlau Paradise. We are an off-the-grid eco-resort
@@ -134,19 +144,21 @@
             Island is 2400 acres of untrailed forest just waiting to be
             explored.
           </p>
-          <form style="display: inline" action="2AboutPage.html" method="get">
-            <button class="button-50">Learn More</button>
-          </form>
+          <div class="button">
+            <form style="display: inline" action="2AboutPage.html" method="get">
+              <button class="button-50">Learn More</button>
+            </form>
+          </div>
         </div>
       </div>
-      <section class="home-statement">
+      <div class="quote-format">
         <p>
           Elfinlau Eco-Resort offers a memorable experience for travellers of
           all kinds, providing a unique, eco-friendly cabin rental on the remote
           and private Echo Island. Come as you are and leave feeling refreshed
           and grounded.
         </p>
-      </section>
+      </div>
       <section class="home-amenities">
         <h2>Resort Amenities</h2>
         <div>
@@ -256,15 +268,15 @@
             </div>
           </div>
         </div>
-        <!-- row of imgs here -->
         <div class="home-amenities">
           <form style="display: inline" action="4ThingsToDo.html" method="get">
             <button class="button-50">Explore Elfinlau</button>
           </form>
         </div>
       </section>
-      <section class="dark-2column1">
-        <div class="dark-2column2">
+
+      <section class="dark-2column">
+        <div class="column1">
           <h2>Meet Your Hosts</h2>
           <p>
             Being the owners of a private island measuring over 2400 acres, they
@@ -272,60 +284,63 @@
             both feel incredibly privileged to share their piece of paradise
             with others.
           </p>
+          <div class="button">
+            <form style="display: inline" action="2AboutPage.html" method="get">
+              <button class="button-50">Learn More</button>
+            </form>
+          </div>
         </div>
         <div>
           <img
             src="images/1Index/pexels-marcus-aurelius-6787519.png"
             alt="Older couple standing together with hands in front of them"
-            style="width: 31.5rem; height: auto"
+            style="width: 50vw; height: auto"
             class="responsive"
           />
         </div>
       </section>
-      <section class="light-4column1">
-        <div class="light-4column2">
+
+      <section class="light-2cards-container">
+        <h2>Customer Testimonials</h2>
+        <div class="light-2cards">
           <div>
-            <h2>Customer Testimonials</h2>
-            <div>
-              <p>
-                Harish and I would like to thank you for allowing us to
-                experience your private paradise! We had a wonderful time and
-                look forward to coming back and soaking in the new hot tub.
-                Every time we leave we are so in awe of what the two of you have
-                built. We are looking forward to seeing you soon, hopefully,
-                very soon. Until then take care.
-                <br />
-                Bal and Harish
-              </p>
-              <div>
-                <img
-                  src="images/1Index/Testimonials/esther-ann-glpYh1cWf0o-unsplash.png"
-                  alt="Older couple standing on beach kissing"
-                  style="width: 18rem; height: auto"
-                  class="responsive"
-                />
+            <div class="card">
+              <img
+                src="Images/1Index/Testimonials/nathan-dumlao-4_mJ1TbMK8A-unsplash.jpg"
+                alt="Photo of Family sitting in a field of flowers"
+                style="width: 100%"
+              />
+              <div class="cardp">
+                <p>
+                  Thank you for the great weekend, we really got to relax and
+                  enjoy ourselves at your beautiful paradise! It was so magical
+                  being able to name our own trail, especially considering there
+                  aren’t many! “Le sentier moussu du lac” which means “The Mossy
+                  Lake Trail”. Even more amazing was having Ray make a sign for
+                  it the next day. So thank you so much for everything!
+                </p>
+                <p>Andréanne, Gilles, Karine, Salomé and Karl</p>
               </div>
             </div>
-            <div>
-              <p>
-                Thank you for the great weekend, we really got to relax and
-                enjoy ourselves at your beautiful paradise! I'm sending you a
-                couple of the pictures we took; the resort honestly did all the
-                work for us. It was so magical being able to name our own trail,
-                especially considering there aren’t many! “Le sentier moussu du
-                lac” which means “The Mossy Lake Trail”. Even more amazing was
-                having Ray make a sign for it the next day. <br />
-                So thank you so much for everything, we hope to see you soon!
-                <br />
-                Andréanne, Gilles, Karine and Karl
-              </p>
-              <div>
-                <img
-                  src="images/1Index/Testimonials/nate-johnston-UpVbQxDGO3I-unsplash.png"
-                  alt="Photo of Family standing on the Beach"
-                  style="width: 18rem; height: auto"
-                  class="responsive"
-                />
+          </div>
+
+          <div>
+            <div class="card">
+              <img
+                src="Images/1Index/Testimonials/esther-ann-glpYh1cWf0o-unsplash.png"
+                alt="Older couple standing on beach kissing"
+                style="width: 100%"
+              />
+              <div class="cardp">
+                <p>
+                  Harish and I would like to thank you for allowing us to
+                  experience your private paradise! We had a wonderful time and
+                  look forward to coming back and soaking in the new hot tub.
+                  Every time we leave we are so in awe of what the two of you
+                  have built. We are looking forward to seeing you soon,
+                  hopefully, very soon. Until then take care.
+                </p>
+                <p>Bal and Harish</p>
               </div>
             </div>
           </div>
@@ -357,11 +372,10 @@
             <h3>Elfinlau Eco-Resort</h3>
             <ul>
               <li>
-                Address: Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0,
-                Canada
+                Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0, Canada
               </li>
-              <li>Email: stay@elfinlau.com</li>
-              <li>Phone Number: +1 604-798-2244</li>
+              <li>stay@elfinlau.com</li>
+              <li>+1 604-798-2244</li>
             </ul>
           </div>
           <div class="column item text">

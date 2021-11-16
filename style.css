@@ -4,13 +4,12 @@
 
 * {
   font-family: "Mohave", sans-serif;
-  
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   background-color: white;
 }
 
@@ -20,12 +19,18 @@ body {
 
 .herotextformat {
   text-align: center;
-  margin-top: 10rem;
-  margin-left: 3.5rem;
+}
+
+.herotextformat h1 {
+  text-align: center;
+  margin-top: 9rem;
   color: #f7eade;
   text-shadow: 0.1rem 0.1rem black;
-  font-size: large;
-  
+  font-size: 6vw;
+}
+
+.herotextformat h2 {
+  color: #f7eade;
 }
 
 /* Socials Nav Bar for All Pages */
@@ -63,41 +68,90 @@ body {
 
 /* Main Horizontal Nav Bar for All Pages */
 
+nav {
+  margin: 0;
+  padding: 0;
+}
+
 .nav-list2 {
-  background-color: rgb(63, 59, 59, 0.6);
   position: relative;
   overflow: hidden;
+  margin: 0;
+  display: block;
+  padding: 0;
+  background-color: #343232;
+  width: 100vw;
 }
 
 .nav-list2 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .nav-list2 li {
-  font-size: small;
-  list-style-type: none;
+  background-color: #343232;
+  display: block;
+  float: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
   text-decoration: none;
-  float: right;
+  transition-duration: 0.5s;
+  width: 20vw;
+  text-align: center;
 }
 
 .nav-list2 li a {
-  padding: 15px;
-  color: #191645;
+  color: #f7eade;
   text-decoration: none;
 }
 
-.nav-list2 li a:hover {
-  background-color: #43c6ac;
-  color: white;
+.nav-list2 li:hover {
+  background-color: #3f3b3b;
+  cursor: pointer;
+}
+
+.nav-list2 ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: block;
+}
+
+.nav-list2 ul li:hover > .nav-list2 ul,
+.nav-list2 ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.nav-list2 ul li ul li {
+  clear: both;
+  width: 100vw;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Button #50 copied from getcssscan.com with slight adjustments to colour and font */
 
 .button-50 {
-  background-color: #2a2828;
+  background-color: #3e3c3c;
   background-image: none;
   border: 1px solid #2a2828;
   border-radius: 4px;
@@ -106,7 +160,7 @@ body {
   font-variant: small-caps;
   color: #f7eade;
   font-family: "Mohave", sans-serif;
-  font-size: 20px;
+  font-size: 1.75vw;
   font-weight: 400;
   line-height: 20px;
   margin: 0 5px 10px 0;
@@ -142,93 +196,100 @@ body {
 
 /* End of Button */
 
-/* 
-.nav-list2 ul ul {
-   position: absolute;
-   background-color: white;
-   padding: 0;
-   text-align: left;
-   display: none;
-}
-
-.nav-list2 ul ul li {
-   display: block;
-   width: 7em;
-   padding-left: 1em;
-   margin-left: 0;
-}
- */
-/* Horizontal Nav Bar for Home Page */
-/*  
-.nav-list2 a {
-  padding-right: 10px;
-  width: 1.5rem;
-  height: auto;
-  text-decoration: none;
-  color: #f7eade;
-  text-align: center;
-}
-*/
-
 /* Dark Coloured 2 Column Layout for all Pages */
 
-.dark-2column1 {
-  background-color: #3f3b3b;
-  clear: both;
+.dark-2column {
   display: flex;
-  margin: 0px;
-  width: calc(100vw-1rem);
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2a2828;
+  color: #f7eade;
+  height: 75vh;
+}
+.dark-2column .column1 {
+  padding: 1rem;
+  width: 50vw;
+  text-align: center;
 }
 
-.dark-2column2 {
-  flex-direction: column;
-  max-width: 50vw;
-  color: #f7eade;
-  text-align: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 5rem;
+.dark-2column .column1 h2 {
+  font-size: 3.5vw;
+}
+
+.dark-2column .column1 h3 {
+  font-size: 3.5vw;
+  margin-bottom: .4rem;
+}
+
+.dark-2column .column1 ul li {
+  font-size: 1.75vw;
+}
+
+.dark-2column .column1 p {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 2vw;
+}
+
+.dark-2column .column1 .button {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 /* Light Coloured 2 Column Layout for all Pages */
 
-.light-2column1 {
-  background-color: #f7eade;
-  clear: both;
+.light-2column {
   display: flex;
-  margin: 0px;
-  width: calc(100vw-1rem);
-  justify-content: space-between;
-}
-
-.light-2column2 {
-  flex-direction: column;
-  max-width: 50vw;
-  color: #2a2828;
-  text-align: center;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 5rem;
-}
-
-/* Light Colourd 4 Column Layout for All Pages */
-
-.light-4column1 {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   background-color: #f7eade;
-  clear: both;
-  display: flex;
-  margin: 0px;
-  width: calc(100vw-1rem);
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  color: #2a2828;
+  height: 75vh;
+}
+.light-2column .column1 {
+  padding: 1rem;
+  width: 50vw;
+  text-align: center;
 }
 
-.light-4column2 {
-  max-width: 25vw;
-  color: #2a2828;
-  text-align: center;
-  margin: 3rem;
+.light-2column .column1 h2 {
+  font-size: 3.5vw;
+}
+
+.light-2column .column1 h3 {
+  font-size: 3.5vw;
+  margin-bottom: .4rem;
+}
+
+.light-2column .column1 ul li {
+  
+  font-size: 1.75vw;
+}
+
+.light-2column .column1 p {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 2vw;
+}
+
+.light-2column .column1 .button {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.light-2column ul li {
+  list-style-type: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 2vw;
 }
 
 .responsive {
@@ -238,23 +299,21 @@ body {
 
 /* HOME PAGE */
 
-/* About Us section on Home Page */
+/* Quote formatting for Statement section on Home Page */
 
-.home-aboutus {
-  background-color: white;
-  clear: both;
-}
-
-/* Statement section on Home Page */
-
-.home-statement {
+.quote-format {
+  display: flex;
   background-color: #3f3b3b;
-  margin: 0;
-  width: calc(100vw-1rem);
+  width: 100vw;
   text-align: center;
   height: 15rem;
+  align-items: center;
+  margin: 0%;
+}
+.quote-format p {
+  padding: 0vh 10vw;
   color: #f7eade;
-  font-size: x-large;
+  font-size: 2.5vw;
 }
 
 /* Amenities section on Home Page */
@@ -263,6 +322,11 @@ body {
   background-color: #f7eade;
   text-align: center;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.home-amenities h2 {
+  font-size: 3.5vw;
 }
 
 /* Cards within Amenities section */
@@ -274,14 +338,6 @@ body {
   margin-bottom: 16px;
   padding: 0 8px;
   margin-left: 0.9rem;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 }
 
 /* Add some shadows to create a card effect */
@@ -305,65 +361,126 @@ body {
 
 /* Meet Your Hosts section on Home Page */
 
-/* Customer Testimonials section on Home Page */
+/* Light 2 Card Layout for Customer Testimonials section on Home Page */
 
-.home-testimonials {
-  background-color: white;
+.light-2cards-container {
+  background-color: #f7eade;
+  padding-top: 1rem;
 }
 
-/* ABOUT PAGE */
-
-/* Our Story section on About Page */
-
-.about-ourstory {
+.light-2cards-container h2 {
+  font-size: 3.5vw;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-/* Meet Your Hosts Section on About Page */
+.light-2cards {
+  background-color: #f7eade;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+}
 
-.about-meethosts {
+.light-2cards .card {
+  width: 40vw;
+  margin-bottom: 3rem;
+}
+
+.light-2cards .cardp {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.light-2cards .cardp ul li {
+  text-align: left;
+  list-style-type: circle;
+}
+
+.light-2cards .cardp::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* BOOKING PAGE */
 
-/* Cabins Section for Booking Page */
-
-.booking-cabins {
+.booking-page h2 {
+  text-align: center;
+  background-color: #f7eade;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 3.5vw;
 }
 
-/* Packages Section for Booking Page */
-
-.booking-packages {
+.booking-page ul li {
+  list-style-type: none;
 }
 
-/* Features Section for Booking page */
+/* CONTACT US PAGE */
 
-.booking-features {
+/* Google Maps Bar */
+
+.maps-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-/* Gallery Section for Booking Page */
-
-.booking-gallery {
+.maps-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* CTA Section for all Pages */
 
 .main-cta {
+  background-image: url(images/1Index/AllPages/error-420-aHA9OALfaqA-unsplash.jpg);
+  background-size: cover;
+  width: 100vw;
+  background-position: center center;
+  overflow: hidden;
+  color: #f7eade;
+  text-align: center;
+  margin: 0;
+  height: 13.5rem;
+}
+
+.main-cta h2 {
+  text-align: left;
+  margin-left: 5rem;
+  font-size: 3.5vw;
+  text-shadow: 0.1rem 0.1rem black;
+}
+
+.main-cta p {
+  text-align: left;
+  margin-left: 5rem;
+  font-size: 2vw;
 }
 
 /* Fat Footer for all Pages */
 
 .footer-dark {
   color: #f7eade;
-  background-color: rgb(42, 40, 40, 0.9);
-  width: 99vw;
+  background-color: #343232;
+  width: 100vw;
+  clear: both;
 }
 
 .footer-dark .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
+  /* FLEX WRAP WRAP FOR ALL ITEMS */
   flex-grow: 1;
-  max-width: 100vw;
 }
 
 .footer-dark .column {
@@ -376,14 +493,14 @@ body {
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .footer-dark ul {
   padding: 0;
   list-style: none;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 1.3vw;
   margin-bottom: 0;
 }
 
@@ -409,7 +526,7 @@ body {
 .footer-socials-container {
   width: 7rem;
   padding-right: 1rem;
-  padding-left: 1rem ;
+  padding-left: 1rem;
   margin: auto;
 }
 
@@ -425,8 +542,8 @@ body {
 }
 
 .footer-socials a img {
-  padding-right: .625rem;
-  padding-left: .625rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
   width: 2rem;
   height: auto;
 }
@@ -444,7 +561,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 1rem;
   opacity: 0.3;
-  font-size: 16px;
+  font-size: 1.25vw;
   margin-bottom: 0;
 }
 /* ALL FOOTER COLUMNS ARE THE SAME WDITH TROUBLE SHOOT FOR AESTHETICS */

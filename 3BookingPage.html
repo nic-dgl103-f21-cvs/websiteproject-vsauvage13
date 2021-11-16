@@ -12,7 +12,7 @@
   />
   <style>
     header {
-      width: calc(100vw-2rem);
+      width: 100vw;
       height: 100vh;
       position: relative;
       overflow: hidden;
@@ -22,7 +22,9 @@
       background-image: url(images/3Booking/kym-ellis-zyeUYocFqqY-unsplash.png);
       background-size: cover;
     }
+    /* MOVE PHOTO SLIGHTLY TO THE LEFT */
   </style>
+  <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
     <header>
       <div>
@@ -58,7 +60,7 @@
         </li>
       </ul>
     </nav>
-    <!-- Nav bar starts here -->
+    <!-- Horizontal navigation bar for websites pages-->
     <nav>
       <div>
         <ul class="nav-list2">
@@ -81,103 +83,214 @@
     </nav>
     <main>
       <!-- Cabin section starts here -->
-      <section>
-        <h2>Cabins</h2>
+      <div class="booking-page">
         <div>
-          <!-- img here -->
-          <h3>Homestead Cabin</h3>
-          <p>Paragraph to explain cabin</p>
-          <form
-            style="display: inline"
-            action="6HomesteadCabin.html"
-            method="get"
-          >
-            <button>View Room</button>
-          </form>
+          <h2>Cabins</h2>
+          <!-- Homestead Cabin starts here -->
+          <div class="dark-2column">
+            <div class="column1">
+              <h3>Homestead Cabin</h3>
+              <ul>
+                <li>Comfortably Sleeps Four People</li>
+                <li>Two Loft-Style Bedrooms with Queen Beds</li>
+                <li>Your Own Woodstove</li>
+              </ul>
+              <form
+                style="display: inline"
+                action="6HomesteadCabin.html"
+                method="get"
+              >
+                <button class="button-50">View Room</button>
+              </form>
+            </div>
+            <div>
+              <img
+                src="images/6Homestead/niklas-tidbury-tc3SyHYF_4s-unsplash.png"
+                alt=""
+                style="width: 50vw; height: auto"
+                class="responsive"
+              />
+            </div>
+          </div>
+          <!-- Homestead Cabin ends here -->
+          <!-- Hummingbird Cabin starts here -->
+          <div class="light-2column">
+            <div>
+              <img
+                src="images/7Hummingbird/andrew-slifkin-A3EhV5FOH5c-unsplash.png"
+                alt=""
+                style="width: 50vw; height: auto"
+                class="responsive"
+              />
+            </div>
+            <div class="column1">
+              <h3>Hummingbird Cabin</h3>
+              <ul>
+                <li>Comfortably Sleeps Three People</li>
+                <li>One Bedroom with a Queen Bed</li>
+                <li>Memory-Foam Futon Bed</li>
+                <li>Your Own Propane Fireplace</li>
+              </ul>
+              <form
+                style="display: inline"
+                action="7HummingBirdCabin.html"
+                method="get"
+              >
+                <button class="button-50">View Room</button>
+              </form>
+            </div>
+          </div>
+          <!-- Hummingbird Cabin ends here -->
+          <!-- Dragonfly Cabin starts here -->
+          <div class="dark-2column">
+            <div class="column1">
+              <h3>Dragonfly Cabin</h3>
+              <ul>
+                <li>Comfortably Sleeps Three People</li>
+                <li>One Bedroom with a Queen Bed</li>
+                <li>Memory-Foam Futon Bed</li>
+                <li>Your Own Propane Fireplace</li>
+                <li></li>
+              </ul>
+              <form
+                style="display: inline"
+                action="8DragonflyCabin.html"
+                method="get"
+              >
+                <button class="button-50">View Room</button>
+              </form>
+            </div>
+            <div>
+              <img
+                src="images/8Dragonfly/matthew-harris-yQoAlbuxb48-unsplash (1).png"
+                alt=""
+                style="width: 50vw; height: auto"
+                class="responsive"
+              />
+            </div>
+          </div>
         </div>
+        <!-- Dragonfly Cabin ends here -->
+        <!-- Packages section starts here -->
         <div>
-          <!-- img here -->
-          <h3>Hummingbird Cabin</h3>
-          <p>Paragraph to explain cabin</p>
-          <form
-            style="display: inline"
-            action="7HummingBirdCabin.html"
-            method="get"
-          >
-            <button>View Room</button>
-          </form>
+          <h2>Packages</h2>
+          <!-- All of Elfinlau starts here -->
+          <div class="dark-2column">
+            <div>
+              <img
+                src="images/9AllofElfinlau/kym-ellis-tq40ATQPbgY-unsplash.png"
+                alt=""
+                style="width: 50vw; height: auto"
+                class="responsive"
+              />
+            </div>
+            <div class="column1">
+              <h3>All of Elfinlau</h3>
+              <p>Rent all Three Cabins and have the Entire Resort to you and your party. Available for a maximum of 10 people.</p>
+              <form
+                style="display: inline"
+                action="9AllOfElfinlau.html"
+                method="get"
+              >
+                <button class="button-50">View Package</button>
+              </form>
+            </div>
+          </div>
+          <!-- All of Elfinlau ends here -->
+          <!-- 5 Day Detox starts here -->
+          <div class="light-2column">
+            <div class="column1">
+              <h3>5 Day Detox</h3>
+              <p>An All-Inclusive 4-Night Stay. Available for a maximum of 4 people.</p>
+              <form style="display: inline" action="10Detox.html" method="get">
+                <button class="button-50">View Package</button>
+              </form>
+            </div>
+            <div>
+              <img
+                src="images/10Detox/reiseuhu-smu2o4QFx1E-unsplash.png"
+                alt=""
+                style="width: 50vw; height: auto"
+                class="responsive"
+              />
+            </div>
+          </div>
+          <!-- 5 Day Detox ends here -->
         </div>
+        <!-- Features section starts here -->
         <div>
-          <!-- img here -->
-          <h3>Dragonfly Cabin</h3>
-          <p>Paragraph to explain cabin</p>
+          <h2 style="background-color: #2a2828; color: #f7eade">Features</h2>
+          <div>
+            <section class="light-2cards-container">
+              <div class="light-2cards">
+                <div>
+                  <div class="card">
+                    <img
+                      src="Images/3Booking/Features/hans-isaacson-ffGdB-Yfy_4-unsplash.png"
+                      alt="Photo of Cabin Bed with hanging edison bulbs lighting the bedroom and white pillows on the bed"
+                      style="width: 100%"
+                    />
+                    <div class="cardp">
+                      <h3>Room Features</h3>
+                      <ul>
+                        <li>Organic Cotton Bedding and Towels</li>
+                        <li>
+                          A fully stocked Kitchenette with a 2-Burner Gas Stove,
+                          a Full-Sized Fridge, and a Sink
+                        </li>
+                        <li>Your own Ice Machine</li>
+                        <li>Hot & Cold Running Water</li>
+                        <li>Your own BBQ on the Private Patio</li>
+                        <li>
+                          Queen-sized Mattresses with Eco-Friendly Memory Foam
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-          <form
-            style="display: inline"
-            action="8DragonflyCabin.html"
-            method="get"
-          >
-            <button>View Room</button>
-          </form>
-        </div>
-      </section>
-      <!-- Packages section starts here -->
-      <section>
-        <h2>Packages</h2>
-        <div>
-          <!-- img here -->
-          <h3>All of Elfinlau</h3>
-          <p>Paragraph to explain package</p>
-          <form
-            style="display: inline"
-            action="9AllOfElfinlau.html"
-            method="get"
-          >
-            <button>View Package</button>
-          </form>
+                <div>
+                  <div class="card">
+                    <img
+                      src="Images/3Booking/Features/guillaume-briard-VcFldyXoO7Q-unsplash.png"
+                      alt="Photo of Elfinlau Resort from afar so you can see the mountains in the distance and the whole resort along the lake."
+                      style="width: 100%"
+                    />
+                    <div class="cardp">
+                      <h3>Booking Features</h3>
+                      <ul>
+                        <li>
+                          Access to the Shower Room (located in the Sauna House)
+                        </li>
+                        <li>Access to the Traditional Finnish Sauna</li>
+                        <li>Day Use of the Tandem Kayaks</li>
+                        <li>Day Use of the 12’ Aluminum Row Boat</li>
+                        <li>Access to a Communal Fire Pit</li>
+                        <li>Garbage, Recycling, and Compost Services</li>
+                        <li>A Private Patio</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
         <div>
           <div>
-            <!-- img here -->
-            <h3>5 Day Detox</h3>
-            <p>Paragraph to explain package</p>
-
-            <form style="display: inline" action="10Detox.html" method="get">
-              <button>View Package</button>
-            </form>
+            <h2 style="background-color: #2a2828; color: #f7eade">Gallery</h2>
           </div>
+          <!-- images here -->
         </div>
-      </section>
-      <!-- Features section starts here -->
-      <section>
-        <h2>Features</h2>
-
-        <div>
-          <h3>Room Features</h3>
-          <!-- img here -->
-          <p>Paragraph explaining room features</p>
-        </div>
-        <div>
-          <h3>Booking Features</h3>
-          <!-- img here -->
-          <p>Paragraph explaining booking features</p>
-        </div>
-      </section>
-      <section>
-        <div><h2>Gallery</h2></div>
-        <!-- images here -->
-      </section>
+      </div>
       <!-- CTA section starts here -->
-      <section>
-        <div>
-          <h2>Adventure Awaits</h2>
-          <p>Paragraph of CTA</p>
-
-          <form style="display: inline" action="3BookingPage.html" method="get">
-            <button>View Accomodations</button>
-          </form>
-        </div>
-      </section>
+      <div class="main-cta">
+        <h2>Adventure Awaits.</h2>
+        <p>Don't wait any longer to make unforgettable memories.</p>
+        <form style="display: inline" action="3BookingPage.html" method="get">
+          <button class="button-50">View Accomodations</button>
+        </form>
+      </div>
     </main>
     <!-- Start of Footer Bar -->
     <div class="footer-dark">
@@ -204,11 +317,10 @@
             <h3>Elfinlau Eco-Resort</h3>
             <ul>
               <li>
-                Address: Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0,
-                Canada
+                Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0, Canada
               </li>
-              <li>Email: stay@elfinlau.com</li>
-              <li>Phone Number: +1 604-798-2244</li>
+              <li>stay@elfinlau.com</li>
+              <li>+1 604-798-2244</li>
             </ul>
           </div>
           <div class="column item text">

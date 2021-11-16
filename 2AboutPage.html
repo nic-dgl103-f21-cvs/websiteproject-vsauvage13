@@ -12,7 +12,7 @@
   />
   <style>
     header {
-      width: calc(100vw-2rem);
+      width: 100vw;
       height: 100vh;
       position: relative;
       overflow: hidden;
@@ -23,6 +23,7 @@
       background-size: cover;
     }
   </style>
+  <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
     <div class="header">
       <header>
@@ -60,6 +61,7 @@
         </li>
       </ul>
     </nav>
+    <!-- Horizontal navigation bar for websites pages-->
     <nav>
       <div>
         <ul class="nav-list2">
@@ -109,35 +111,45 @@
         </div>
       </section>
       <!-- Meet Your Hosts section starts here -->
-      <section>
-        <div>
-          <h2>Meet Your Hosts</h2>
-          <h3>Marcella</h3>
-          <p>
-            Marcella was born and raised in the Harrison Lake area. She prides
-            herself on knowing the local land.
-          </p>
-          <!-- img here -->
-        </div>
-        <div>
-          <h3>Ray</h3>
-          <p>
-            Ray moved to Canada from Finland in 1993 and met Marcella shortly
-            after.
-          </p>
-          <!-- img here -->
-        </div>
-      </section>
+      <div>
+        <h2>Meet Your Hosts</h2>
+        <h3>Marcella & Ray</h3>
+        <p>
+          Marcella was born and raised in the Harrison Lake area. She prides
+          herself on knowing the local land and its inhabitants well. Marcella
+          became quickly certified in many practices including becoming a
+          certified Reiki Master and Yoga Instructor. She has always had a
+          passion for hosting and designed Elfinlau with this at the forefront
+          of her mind.
+        </p>
+        <img
+          src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787203.jpg"
+          alt="Woman in teal yoga clothes standing in a Warrior 1 Pose "
+          style="width: 31.5rem; height: auto"
+          class="responsive"
+        />
+        <p>
+          Ray moved to Canada from Finland in 1993 and met Marcella shortly
+          after. Ray worked as a Carpenter for 2 decades before becoming a
+          General Contracter for 8 years. Ray brought his professional knowledge
+          to the construction of Elfinlau, building the cabins and the sauna
+          from scratch.
+        </p>
+        <img
+          src="Images/2AboutUs/MeetYourHosts/pexels-marcus-aurelius-6787408.jpg"
+          alt="Man in grey and black yoga clothes sitting on a yoga mat in a Lotus Pose "
+          style="width: 31.5rem; height: auto"
+          class="responsive"
+        />
+      </div>
       <!-- CTA section starts here -->
-      <section>
-        <div>
-          <h2>Adventure Awaits</h2>
-          <p>Paragraph of CTA</p>
-          <form style="display: inline" action="3BookingPage.html" method="get">
-            <button>View Accomodations</button>
-          </form>
-        </div>
-      </section>
+      <div class="main-cta">
+        <h2>Adventure Awaits.</h2>
+        <p>Don't wait any longer to make unforgettable memories.</p>
+        <form style="display: inline" action="3BookingPage.html" method="get">
+          <button class="button-50">View Accomodations</button>
+        </form>
+      </div>
     </main>
     <!-- Start of Footer Bar -->
     <div class="footer-dark">
@@ -164,11 +176,10 @@
             <h3>Elfinlau Eco-Resort</h3>
             <ul>
               <li>
-                Address: Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0,
-                Canada
+                Box 120 Echo Island, Harrison Hot Springs, BC V0M 1K0, Canada
               </li>
-              <li>Email: stay@elfinlau.com</li>
-              <li>Phone Number: +1 604-798-2244</li>
+              <li>stay@elfinlau.com</li>
+              <li>+1 604-798-2244</li>
             </ul>
           </div>
           <div class="column item text">
