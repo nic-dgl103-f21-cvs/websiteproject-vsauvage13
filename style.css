@@ -589,10 +589,6 @@ li:hover .dropdown {
   text-align: left;
   text-align: center;
 }
-.contact-container {
-  height: 75vh;
-  font-size: 1.5vw;
-}
 
 /* Contact Us Form */
 
@@ -607,12 +603,12 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-size: 1.5vw;
 }
 
 input[type="submit"] {
   background-color: #dc6641;
   color: white;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -631,6 +627,12 @@ input[type="submit"]:hover {
   color: #2a2828;
   position: relative;
   margin: auto;
+  height: 75vh;
+  font-size: 1.5vw;
+}
+
+.contact-container textarea {
+  height: 15vh;
 }
 
 /* CTA Section for all Pages */
