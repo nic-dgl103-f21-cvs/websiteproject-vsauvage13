@@ -76,7 +76,6 @@ nav {
 
 .nav-list2 {
   position: relative;
-  /* overflow: hidden; */
   margin: 0;
   display: block;
   padding: 0;
@@ -115,8 +114,6 @@ nav {
 }
 
 .nav-list2 ul li ul {
-  /* visibility: hidden;
-  opacity: 0; */
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
@@ -139,7 +136,6 @@ li:hover .dropdown {
   position: absolute;
   min-width: 160px;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
 }
 
@@ -681,7 +677,7 @@ input[type="submit"]:hover {
 
 .footer-dark .column {
   margin-top: 2rem;
-  width: 10rem;
+  width: 15vw;
   text-align: left;
 }
 
@@ -719,6 +715,21 @@ input[type="submit"]:hover {
   margin-bottom: 0;
 }
 
+.responsive-map {
+  overflow: hidden;
+  padding-right: 300%;
+  padding-bottom: 125%;
+  position: relative;
+}
+
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .footer-socials-container {
   width: 7rem;
   padding-right: 1rem;
@@ -754,7 +765,6 @@ input[type="submit"]:hover {
 
 .footer-dark .copyright {
   text-align: center;
-  padding-top: 2rem;
   padding-bottom: 1rem;
   opacity: 0.3;
   font-size: 1.25vw;
