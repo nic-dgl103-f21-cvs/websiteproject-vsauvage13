@@ -72,6 +72,7 @@ body {
 nav {
   margin: 0;
   padding: 0;
+  clear: both;
 }
 
 .nav-list2 {
@@ -540,7 +541,7 @@ li:hover .dropdown {
 /* Google Maps Bar */
 
 .maps-container {
-  overflow: hidden;
+  overflow:hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
@@ -717,7 +718,7 @@ input[type="submit"]:hover {
 
 .responsive-map {
   overflow: hidden;
-  padding-right: 300%;
+  padding-right: 270%;
   padding-bottom: 125%;
   position: relative;
 }
