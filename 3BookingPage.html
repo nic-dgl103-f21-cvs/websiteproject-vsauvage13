@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap"
     rel="stylesheet"
   />
-  <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 -->
+  <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
   <style>
     header {
       width: 100vw;
@@ -64,7 +64,8 @@
         </li>
       </ul>
     </nav>
-    <!-- Horizontal dropdown navigation bar for websites pages below-->
+    <!-- Horizontal dropdown navigation bar for websites pages below -->
+    <!-- *** BOOKING NAV DROPDOWN DOESNT LOOK WORK WHEN PAGE IS CONDENSED PERHAPS I HAVE TO DO A MEDIA QUERIE? MAYBE WE CAN GO OVER MEDIA QUERIES FOR THIS PROJECT *ONLY ONE PAGE HAS TO HAVE THEM* on another note it seems that I acidentally deleted something in my nav bar css that stops the dropdown from dropping in a column, troubleshoot.  *** -->
     <nav>
       <ul class="nav-list2">
         <li><a href="2AboutPage.html">About Us</a></li>
@@ -87,7 +88,7 @@
       <!-- Cabin section starts here -->
       <div class="booking-page">
         <div>
-          <h2>Cabins</h2>
+          <h2 style="padding-top: 4.6rem;">Cabins</h2>
           <!-- Homestead Cabin starts here -->
           <div class="dark-2column">
             <div class="column1">
@@ -105,26 +106,25 @@
                 <button class="button-50">View Room</button>
               </form>
             </div>
-            <div>
-              <img
-                src="images/6Homestead/niklas-tidbury-tc3SyHYF_4s-unsplash.png"
-                alt=""
-                style="width: 50vw; height: auto"
-                class="responsive"
-              />
-            </div>
+
+            <img
+              src="images/6Homestead/niklas-tidbury-tc3SyHYF_4s-unsplash.png"
+              alt=""
+              style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+              class="responsive"
+            />
           </div>
           <!-- Homestead Cabin ends here -->
           <!-- Hummingbird Cabin starts here -->
           <div class="light-2column">
-            <div>
+
               <img
                 src="images/7Hummingbird/andrew-slifkin-A3EhV5FOH5c-unsplash.png"
                 alt=""
-                style="width: 50vw; height: auto"
+                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
                 class="responsive"
               />
-            </div>
+
             <div class="column1">
               <h3>Hummingbird Cabin</h3>
               <ul>
@@ -162,14 +162,14 @@
                 <button class="button-50">View Room</button>
               </form>
             </div>
-            <div>
+
               <img
                 src="images/8Dragonfly/matthew-harris-yQoAlbuxb48-unsplash.png"
                 alt=""
-                style="width: 50vw; height: auto"
+                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
                 class="responsive"
               />
-            </div>
+
           </div>
         </div>
         <!-- Dragonfly Cabin ends here -->
@@ -178,14 +178,14 @@
           <h2>Packages</h2>
           <!-- All of Elfinlau starts here -->
           <div class="dark-2column">
-            <div>
+
               <img
                 src="images/9AllofElfinlau/kym-ellis-tq40ATQPbgY-unsplash.png"
                 alt=""
-                style="width: 50vw; height: auto"
+                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
                 class="responsive"
               />
-            </div>
+
             <div class="column1">
               <h3>All of Elfinlau</h3>
               <p>
@@ -214,14 +214,14 @@
                 <button class="button-50">View Package</button>
               </form>
             </div>
-            <div>
+
               <img
                 src="images/10Detox/reiseuhu-smu2o4QFx1E-unsplash.png"
                 alt=""
-                style="width: 50vw; height: auto"
+                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
                 class="responsive"
               />
-            </div>
+
           </div>
           <!-- 5 Day Detox ends here -->
         </div>
@@ -332,6 +332,7 @@
               >
                 <button class="button-50">Book Now</button>
               </form>
+              <!-- *** FOOTER "BOOK NOW"  *** -->
               <!-- CTA button for Fat Footer -->
             </div>
           </div>
@@ -367,7 +368,14 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">Vienna May Sauvage © 2021</p>
+        <p class="copyright">
+          Vienna May Sauvage © 2021 <br />
+
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
       </footer>
     </div>
   </body>

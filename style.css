@@ -1,9 +1,10 @@
-/* ALL PAGES */
-
-/* Header for All Pages */
+/* ===============
+   ALL PAGES FORMATTING STARTS HERE
+   =============== */
 
 * {
   font-family: "Mohave", sans-serif;
+  max-width: 100%;
 }
 
 body {
@@ -11,42 +12,52 @@ body {
   padding: 0;
   height: 100vh;
   background-color: white;
-  width: 99.7vw;
 }
 
-.header {
+/* ===============
+   ALL PAGES FORMATTING ENDS HERE
+   =============== */
+
+/* ===============
+   HEADER FOR ALL PAGES STARTS HERE
+   =============== */
+
+header {
   position: relative;
-}
-
-.herotextformat {
+  color: #f7eade;
   text-align: center;
 }
 
-.herotextformat h1 {
+header h1 {
   text-align: center;
   margin-top: 9rem;
-  color: #f7eade;
   text-shadow: 0.1rem 0.1rem black;
   font-size: 5em;
 }
 
-.herotextformat h2 {
-  color: #f7eade;
-}
+/* ===============
+   HEADER FOR ALL PAGES ENDS HERE
+   =============== */
 
-/* Socials Nav Bar for All Pages */
+/* ===============
+   SOCIALS NAV FOR ALL PAGES STARTS HERE
+   =============== */
 
 .nav1-container {
   position: absolute;
   top: 0;
   right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .nav-list1 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgba(247, 234, 222, 0.6);
+  border-radius: 10px;
+  padding-top: 8px;
 }
 
 .nav-list1 li {
@@ -57,7 +68,7 @@ body {
 .nav-list1 a img {
   padding-right: 10px;
   padding-left: 10px;
-  width: 2rem;
+  width: 4rem;
   height: auto;
 }
 
@@ -65,9 +76,15 @@ body {
   background-color: rgb(247, 234, 222, 0.4);
 }
 
+/* ===============
+   SOCIALS NAV FOR ALL PAGES ENDS HERE
+   =============== */
+
 /* Look up image that is different colour might need javascript, or look up sprites */
 
-/* Main Horizontal Nav Bar for All Pages */
+/* ===============
+   MAIN HORIZONTAL NAV FOR ALL PAGES STARTS HERE
+   =============== */
 
 nav {
   margin: 0;
@@ -81,7 +98,6 @@ nav {
   display: block;
   padding: 0;
   background-color: #343232;
-  width: 100vw;
   font-size: 1.25em;
 }
 
@@ -100,18 +116,13 @@ nav {
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
-  width: 20vw;
+  width: 20%;
   text-align: center;
 }
 
 .nav-list2 li a {
   color: #f7eade;
   text-decoration: none;
-}
-
-.nav-list2 li:hover {
-  background-color: #3f3b3b;
-  cursor: pointer;
 }
 
 .nav-list2 ul li ul {
@@ -121,10 +132,6 @@ nav {
   margin-top: 1rem;
   left: 0;
   display: none;
-}
-
-li:hover .dropdown {
-  display: block;
 }
 
 .nav-list2 ul li ul li {
@@ -140,11 +147,28 @@ li:hover .dropdown {
   padding: 12px 16px;
 }
 
+li:hover .dropdown {
+  display: block;
+}
+
+.nav-list2 li:hover {
+  background-color: #3f3b3b;
+  cursor: pointer;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* ===============
+   MAIN HORIZONTAL NAV FOR ALL PAGES ENDS HERE
+   =============== */
+
 /* Button #50 copied from getcssscan.com with slight adjustments to colour and font */
+
+/* ===============
+   BUTTON STYLING FOR ALL PAGES STARTS HERE
+   =============== */
 
 .button-50 {
   background-color: #3e3c3c;
@@ -190,9 +214,13 @@ li:hover .dropdown {
   transform: translate(2px, 2px);
 }
 
-/* End of Button */
+/* ===============
+   BUTTON STYLING FOR ALL PAGES ENDS HERE
+   =============== */
 
-/* Dark Coloured 2 Column Layout for all Pages */
+/* ===============
+   DARK COLOURED 2 COLUMN LAYOUT FOR ALL PAGES STARTS HERE
+   =============== */
 
 .dark-2column {
   display: flex;
@@ -237,7 +265,13 @@ li:hover .dropdown {
   padding-bottom: 0.25rem;
 }
 
-/* Light Coloured 2 Column Layout for all Pages */
+/* ===============
+   DARK COLOURED 2 COLUMN LAYOUT FOR ALL PAGES ENDS HERE
+   =============== */
+
+/* ===============
+   LIGHT COLOURED 2 COLUMN LAYOUT FOR ALL PAGES STARTS HERE
+   =============== */
 
 .light-2column {
   display: flex;
@@ -289,14 +323,22 @@ li:hover .dropdown {
   font-size: 1.25em;
 }
 
+/* ===============
+   LIGHT COLOURED 2 COLUMN LAYOUT FOR ALL PAGES ENDS HERE
+   =============== */
+
+/* RESPONSIVE CSS FOR IMAGES */
+
 .responsive {
   width: 100%;
   height: auto;
 }
 
-/* HOME PAGE */
+/* ===============
+   HOME PAGE STYLING STARTS HERE
+   =============== */
 
-/* Quote formatting for Statement section on Home Page */
+/* Quote Formatting for Statement Section on Home Page */
 
 .quote-format {
   display: flex;
@@ -313,7 +355,7 @@ li:hover .dropdown {
   font-size: 1.25em;
 }
 
-/* Amenities section on Home Page */
+/* Amenities Section on Home Page */
 
 .home-amenities {
   background-color: #f7eade;
@@ -327,7 +369,7 @@ li:hover .dropdown {
   font-size: 2.5em;
 }
 
-/* Cards within Amenities section */
+/* Cards within Amenities Section */
 
 /* Columns side by side */
 .column {
@@ -357,9 +399,9 @@ li:hover .dropdown {
   display: table;
 }
 
-/* Meet Your Hosts section on Home Page */
-
-/* Light 2 Card Layout for Customer Testimonials section on Home Page */
+/* ===============
+   LIGHT COLOURED2 CARD LAYOUT FOR CUSTOMER TESTIMONIALS SECTION ON HOME PAGE STARTS HERE
+   =============== */
 
 .light-2cards-container {
   background-color: #f7eade;
@@ -421,7 +463,13 @@ li:hover .dropdown {
   display: table;
 }
 
-/* ABOUT PAGE */
+/* ===============
+   HOME PAGE STYLING ENDS HERE
+   =============== */
+
+/* ===============
+   ABOUT PAGE STYLING STARTS HERE
+   =============== */
 
 /* Text Block on About Us Page */
 
@@ -446,7 +494,13 @@ li:hover .dropdown {
   padding-bottom: 2rem;
 }
 
-/* BOOKING PAGE */
+/* ===============
+   ABOUT PAGE STYLING ENDS HERE
+   =============== */
+
+/* ===============
+   BOOKING PAGE STYLING STARTS HERE
+   =============== */
 
 .booking-page h2 {
   text-align: center;
@@ -460,7 +514,13 @@ li:hover .dropdown {
   list-style-type: none;
 }
 
-/* THINGS TO DO PAGE */
+/* ===============
+   BOOKING PAGE STYLING ENDS HERE
+   =============== */
+
+/* ===============
+   THINGS TO DO PAGE STYLING STARTS HERE
+   =============== */
 
 /* Dark 2 Card Layout for Things to Do in Harrison Lke section on Things to Do Page*/
 
@@ -535,14 +595,20 @@ li:hover .dropdown {
   clear: both;
   display: table;
 }
+/* ===============
+   THINGS TO DO PAGE STYLING ENDS HERE
+   =============== */
 
-/* CONTACT US PAGE */
+/* ===============
+   CONTACT US PAGE STYLING STARTS HERE
+   =============== */
 
-/* Google Maps Bar */
+/* 
+GOOGLE MAPS BAR STYLING STARTS HERE */
 
 .maps-container {
-  overflow:hidden;
-  padding-bottom: 56.25%;
+  margin-top: 3.5rem;
+  padding-bottom: 30%;
   position: relative;
   height: 0;
 }
@@ -555,84 +621,136 @@ li:hover .dropdown {
   position: absolute;
 }
 
-/* Contact us Form Container */
+/*
+GOOGLE MAPS BAR STYLING ENDS HERE
+*/
+
+/* CONTACT US FORM STARTS HERE */
+
+/* ===============
+   FORM SECTION STARTS HERE
+   =============== */
 
 .form-container {
-  color: #f7eade;
-  background-color: #343232;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  align-items: center;
-}
-
-.form-container .column1 {
+  background-color: #2a2828;
   justify-content: center;
-  padding: 0 2rem;
-  text-align: center;
+  max-width: 100%;
+  padding: 10px 300px;
 }
 
 .form-container h2 {
-  font-size: 2.5em;
+  text-align: center;
+}
+
+.form article {
+  padding: 10px 0;
+  width: 20vw;
   margin: 0;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
-.form-container p {
-  font-size: 1.25em;
-  text-align: left;
-  text-align: center;
+input[type="reset"] {
+  color: #dc6641;
+  padding: 12px 20px;
+  border: 1px solid #dc6641;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-/* Contact Us Form */
-
-input[type="text"],
-select,
-textarea {
-  width: 50vw;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  font-size: 1.25em;
+input[type="reset"]:hover {
+  background-color: #f9e3dd;
 }
 
 input[type="submit"] {
   background-color: #dc6641;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  color: #fbf5ef;
+  padding: 12px 20px;
+  border: 1px solid #dc6641;
+  border-radius: 10px;
   cursor: pointer;
-  width: 50vw;
 }
 
 input[type="submit"]:hover {
-  background-color: #e38164;
-}
-
-.contact-container {
-  border-radius: 5px;
-  background-color: #fbf5ef;
-  padding: 20px;
-  width: 50vw;
+  background-color: #f9e3dd;
   color: #2a2828;
-  position: relative;
-  margin: auto;
-  height: 75vh;
-  font-size: 1.25em;
 }
 
-.contact-container textarea {
-  height: 15vh;
+/* ===============
+     STRUCTURE
+     =============== */
+
+.wrapper-form {
+  border-radius: 10px;
+  background-color: #fbf5ef;
+  padding: 35px;
+  margin: 0;
+  width: 800px;
+  margin-left: 100px;
 }
 
-/* CTA Section for all Pages */
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===============
+     FORM CONTROLS
+     =============== */
+
+input,
+select,
+textarea {
+  font-family: "Mohave", sans-serif;
+  font-size: 1em;
+  background-color: white;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  font-family: "Mohave", sans-serif;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.label-required {
+  font-size: 0.8rem;
+  color: #dc6641;
+}
+
+/* ===============
+     FORM SECTION ENDS HERE
+     =============== */
+
+/* ===============
+   CONTACT US PAGE STYLING STARTS HERE
+   =============== */
+
+/* ===============
+   CTA SECTION FOR ALL PAGES STARTS HERE
+   =============== */
 
 .main-cta {
   background-image: url(images/1Index/AllPages/error-420-aHA9OALfaqA-unsplash.jpg);
@@ -659,7 +777,13 @@ input[type="submit"]:hover {
   font-size: 1.25em;
 }
 
-/* Fat Footer for all Pages */
+/* ===============
+   CTA SECTION FOR ALL PAGES ENDS HERE
+   =============== */
+
+/* ===============
+   FAT FOOTER SECTION FOR ALL PAGES STARTS HERE
+   =============== */
 
 .footer-dark {
   color: #f7eade;
@@ -693,7 +817,7 @@ input[type="submit"]:hover {
   padding: 0;
   list-style: none;
   line-height: 1.6;
-  font: size 16px;;
+  font: size 16px;
   margin-bottom: 0;
 }
 
@@ -701,7 +825,7 @@ input[type="submit"]:hover {
   color: inherit;
   text-decoration: none;
   opacity: 0.6;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-dark ul a:hover {
@@ -715,7 +839,7 @@ input[type="submit"]:hover {
 .footer-dark .item.text ul li {
   opacity: 0.6;
   margin-bottom: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -726,6 +850,8 @@ input[type="submit"]:hover {
   position: relative;
 }
 
+/* RESPONSIVE MAP IN FOOTER STARTS HERE */
+
 .responsive-map iframe {
   left: 0;
   top: 0;
@@ -733,6 +859,10 @@ input[type="submit"]:hover {
   width: 100%;
   position: absolute;
 }
+
+/* RESPONSIVE MAP IN FOOTER STARTS HERE */
+
+/* SOCIALS IN FOOTER STARTS HERE */
 
 .footer-socials-container {
   width: 7rem;
@@ -767,6 +897,10 @@ input[type="submit"]:hover {
   opacity: 0.9;
 }
 
+/* SOCIALS IN FOOTER STARTS HERE */
+
+/* COPYRIGHT/DISCLAIMER IN FOOTER STARTS HERE */
+
 .footer-dark .copyright {
   text-align: center;
   padding-bottom: 1rem;
@@ -774,4 +908,23 @@ input[type="submit"]:hover {
   font-size: 1em;
   margin-bottom: 0;
 }
+
+/* COPYRIGHT/DISCLAIMER IN FOOTER ENDS HERE */
+
+.copyright {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.wireframes {
+  padding-top: 4rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* ===============
+   FAT FOOTER SECTION FOR ALL PAGES ENDS HERE
+   =============== */
+
 /* ALL FOOTER COLUMNS ARE THE SAME WDITH TROUBLE SHOOT FOR AESTHETICS */

@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
-    <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 -->
+    <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400-->
     <style>
       header {
         width: 100vw;
@@ -28,56 +28,55 @@
       }
     </style>
     <!-- Inline style sheet formats hero image for individual pages. -->
+    <!-- *** PERHAPS WE COULD GO OVER PUTTING THE NAV BAR AT THE TOP OF THE PAGE AGAIN OR I COULD ADJUST THE HEIGHT OF THE PICTURE SO YOU CAN SEE THE NAV BAR ON THE LANDING PAGE ***-->
   </head>
   <body>
-    <div class="header">
-      <header>
-        <div>
-          <a href="index.html"
-            ><img
-              src="images/1Index/AllPages/logo.gif"
-              alt="Elfinlau Logo"
-              width="100"
-            />
-            <!-- **index link does not work; logo is not clickable** -->
-          </a>
-        </div>
-        <!-- Website Logo is above -->
-        <div class="herotextformat">
-          <h1>Welcome to Paradise</h1>
-          <h2>
-            Experience a private island getaway to refresh, ground, and relax.
-          </h2>
-          <!-- Hero image Text  -->
-          <form style="display: inline" action="2AboutPage.html" method="get">
-            <button class="button-50">Learn More</button>
-          </form>
+    <header>
+      <a href="index.html"
+        ><img
+          src="images/1Index/AllPages/logo.gif"
+          alt="Elfinlau Logo"
+          width="175rem"
+        />
+        <!-- ***INDEX LINK DOES NOT WORK AND LOGO/BUTTONS IN HEADER ARE NOT CLICKABLE. THINKING IT HAS SOMETHING TO DO WITH A NESTING THING OR A Z-INDEX PROBLEM BUT NOT SURE HOW TO TROUBLESHOOT*** -->
+      </a>
+      <!-- Website Logo is above -->
+      <div>
+        <h1>Welcome to Paradise</h1>
+        <h2>
+          Experience a private island getaway to refresh, ground, and relax.
+        </h2>
+        <!-- *** WANT TO CENTER H1 AND H2 IN AN EFFICIENT WAY BUT SEEMS TO BE FINICKY *** -->
+        <!-- Hero image Text  -->
+        <form style="display: inline" action="2AboutPage.html" method="get">
+          <button class="button-50">Learn More</button>
+        </form>
+        <form style="display: inline" action="3BookingPage.html" method="get">
+          <button class="button-50">Book Now</button>
+        </form>
+        <!-- CTA Buttons -->
+      </div>
 
-          <form style="display: inline" action="3BookingPage.html" method="get">
-            <button class="button-50">Book Now</button>
-          </form>
-          <!-- CTA Buttons -->
-        </div>
-      </header>
-      <!-- Socials horizontal nav bar below -->
-      <nav class="nav1-container">
-        <ul class="nav-list1">
-          <li>
-            <a href="https://www.facebook.com/elfinlau"
-              ><img
-                src="images/1Index/AllPages/facebook-square-brands.svg"
-                alt="Facebook Logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/2elfinlau/?hl=en"
-              ><img
-                src="images/1Index/AllPages/instagram-square-brands.svg"
-                alt="Instagram Logo"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+      <!-- *** HOW TO MAKE CONTAINER THAT CONTAINS H1, H2 AND BUTTONS RESPONSIVE, PERHAPS MAKING A CLASS ON THE DIV THAT LIMITS THE WIDTH? *** -->
+    </header>
+    <!-- Socials horizontal nav bar below -->
+    <div class="nav1-container">
+      <ul class="nav-list1">
+        <li>
+          <a href="https://www.facebook.com/elfinlau"
+            ><img
+              src="images/1Index/AllPages/facebook-square-brands.svg"
+              alt="Facebook Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/2elfinlau/?hl=en"
+            ><img
+              src="images/1Index/AllPages/instagram-square-brands.svg"
+              alt="Instagram Logo"
+          /></a>
+        </li>
+      </ul>
     </div>
     <!-- Horizontal dropdown navigation bar for websites pages below-->
     <nav>
@@ -120,25 +119,23 @@
             </form>
           </div>
         </div>
-        <div>
-          <img
-            src="images/1Index/matthew-harris-yQoAlbuxb48-unsplash.png"
-            alt="Red Cabin on the edge of a Lake"
-            style="width: 50vw; height: auto"
-            class="responsive"
-          />
-        </div>
+
+        <img
+          src="images/1Index/matthew-harris-yQoAlbuxb48-unsplash.png"
+          alt="Red Cabin on the edge of a Lake"
+          style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+          class="responsive"
+        />
       </div>
 
       <div class="light-2column">
-        <div>
-          <img
-            src="Images/1Index/h-v-nHTBSnKKj9U-unsplash.png"
-            alt="Vintage Cabin by the Lake"
-            style="width: 50vw; height: auto"
-            class="responsive"
-          />
-        </div>
+        <img
+          src="Images/1Index/h-v-nHTBSnKKj9U-unsplash.png"
+          alt="Vintage Cabin by the Lake"
+          style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+          class="responsive"
+        />
+
         <div class="column1">
           <h2>About Us</h2>
           <p>
@@ -293,14 +290,13 @@
             </form>
           </div>
         </div>
-        <div>
-          <img
-            src="images/1Index/pexels-marcus-aurelius-6787519.png"
-            alt="Older couple standing together with hands in front of them"
-            style="width: 50vw; height: auto"
-            class="responsive"
-          />
-        </div>
+
+        <img
+          src="images/1Index/pexels-marcus-aurelius-6787519.png"
+          alt="Older couple standing together with hands in front of them"
+          style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+          class="responsive"
+        />
       </section>
 
       <section class="light-2cards-container">
@@ -402,6 +398,7 @@
                 loading="lazy"
               ></iframe>
             </div>
+            <!-- *** WHEN PAGE IS RESIZED DOWN MAP STAYS THE SAME SIZE, CANT USE RESPONSIVE UNITS IN HTML, MAYBE IN CSS? *** -->
             <!-- Google Maps Link -->
           </div>
         </div>
@@ -423,7 +420,14 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">Vienna May Sauvage © 2021</p>
+        <p class="copyright">
+          Vienna May Sauvage © 2021 <br />
+
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
       </footer>
     </div>
   </body>

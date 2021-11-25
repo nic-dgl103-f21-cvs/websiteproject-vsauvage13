@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap"
     rel="stylesheet"
   />
-  <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 -->
+  <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
   <style>
     header {
       width: 100vw;
@@ -85,8 +85,9 @@
     </nav>
     <main>
       <div>
+        <!-- *** CARDS DON'T WRAP PROPERLY WHEN PAGE IS SIZED DOWN, AGAIN PERHAPS A MEDIA QUERIE? *** -->
         <section class="home-amenities">
-          <h2>Resort Amenities</h2>
+          <h2  style="padding-top: 3rem;">Resort Amenities</h2>
           <div>
             <div class="row">
               <div class="column">
@@ -237,7 +238,7 @@
           </div>
         </section>
       </div>
-
+<!-- *** IS THERE A WAY TO MAKE THE CARDS A FIXED SIZE WHILE ALSO BEING RESPONSIVE SO THAT THE BOXES ARE THE SAME SIZE WHEN THE PAGE IS RESIZED REGARDLESS OF CONTENT INSIDE? *** -->
       <div>
         <section class="dark-2cards-container">
           <h2>On Harrison Lake</h2>
@@ -245,8 +246,8 @@
             <div>
               <div class="card">
                 <img
-                  src="Images/1Index/Testimonials/nathan-dumlao-4_mJ1TbMK8A-unsplash.jpg"
-                  alt="Photo of Family sitting in a field of flowers"
+                  src="Images/4ThingsToDo/jay-wennington-N_Y88TWmGwA-unsplash.png"
+                  alt="Restaurant table with a plate of food and and wine glasses"
                   style="width: 100%"
                 />
                 <div class="cardp">
@@ -279,8 +280,8 @@
             <div>
               <div class="card">
                 <img
-                  src="Images/1Index/Testimonials/esther-ann-glpYh1cWf0o-unsplash.png"
-                  alt="Older couple standing on beach kissing"
+                  src="Images/4ThingsToDo/timo-stern-iUBgeNeyVy8-unsplash.png"
+                  alt="Girl walking down cobblestone street with backpack and her hair in a bun"
                   style="width: 100%"
                 />
                 <div class="cardp">
@@ -399,7 +400,14 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">Vienna May Sauvage © 2021</p>
+        <p class="copyright">
+          Vienna May Sauvage © 2021 <br />
+
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
       </footer>
     </div>
   </body>
