@@ -28,7 +28,7 @@ header {
   color: #f7eade;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background-position: center center;
