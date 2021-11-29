@@ -39,7 +39,6 @@ header {
 
 header h1 {
   text-align: center;
-
   text-shadow: 0.1rem 0.1rem black;
   font-size: 6.25vw;
 }
@@ -55,7 +54,7 @@ header h1 {
 }
 
 .welcome-wrapper h1 {
-  margin-top: 9vw;
+  margin-top: 10vw;
 }
 /* Wrapper for home page header ends */
 
@@ -132,7 +131,7 @@ header h2 {
   color: rgba(239, 213, 189, 0.8);
   text-shadow: 0.1rem 0.1rem black;
 }
-/* ICON HANG STYLING STARTS HERE */
+/* ICON HANG STYLING STARTS HERE WC3 STATES THESE AS WARNINGS WHEN I VALIDATE MY CODE BUT AS FAR AS I UNDERSTAND IT IS BECUASE  THE VALIDATOR ONLY VALIDATES AGAINST VALID CODE AND VENDOR EXTENSIONS ARE PROPIETARY CODE AND TECHNICALLY UNVALID BUT STILL USABLE. */
 
 /* Icon Hang from http://ianlunn.github.io/Hover/ */
 @-webkit-keyframes hvr-icon-hang {
@@ -213,17 +212,9 @@ header h2 {
    SOCIALS NAV FOR ALL PAGES ENDS HERE
    =============== */
 
-/* Look up image that is different colour might need javascript, or look up sprites */
-
 /* ===============
    MAIN HORIZONTAL NAV FOR ALL PAGES STARTS HERE
    =============== */
-
-/* nav {
-  margin: 0;
-  padding: 0;
-  clear: both;
-} */
 
 .nav2-container {
   position: absolute;
@@ -274,8 +265,8 @@ header h2 {
 .dropdown {
   display: none;
   position: absolute;
-  min-width: 160px;
-  /* max? */
+  min-width: 225px;
+  /* could use max to make dropdown a column, but clashes with h1 on home pge */
   padding: 12px 16px;
 }
 
@@ -436,7 +427,6 @@ li:hover .dropdown {
   padding: 1rem 2rem;
   width: 50%;
   text-align: center;
-
 }
 
 .light-2column .column1 h2 {
@@ -459,7 +449,6 @@ li:hover .dropdown {
 }
 
 .light-2column .column1 p {
-
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: 1.25em;
@@ -470,13 +459,6 @@ li:hover .dropdown {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-/* 
-.light-2column ul li {
-  list-style-type: none;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-size: 1.25em;
-} */
 
 /* ===============
    LIGHT COLOURED 2 COLUMN LAYOUT FOR ALL PAGES ENDS HERE
@@ -807,8 +789,9 @@ li:hover .dropdown {
 /* ===============
    CONTACT US PAGE STYLING STARTS HERE
    =============== */
-
 /* 
+   WC3 STATES THE FILTERS AS WARNINGS WHEN I VALIDATE MY CODE BUT AS FAR AS I UNDERSTAND IT IS BECUASE THE VALIDATOR ONLY VALIDATES AGAINST VALID CODE AND VENDOR EXTENSIONS ARE PROPIETARY CODE AND TECHNICALLY UNVALID BUT STILL USABLE.
+
 GOOGLE MAPS BAR STYLING STARTS HERE */
 
 .maps-container {
@@ -1132,12 +1115,11 @@ fieldset {
    FAT FOOTER SECTION FOR ALL PAGES ENDS HERE
    =============== */
 
-/* ALL FOOTER COLUMNS ARE THE SAME WDITH TROUBLE SHOOT FOR AESTHETICS */
-
 /* ===============
-   STYLING FOR DEVICE SIZES STARTS HERE
+   STYLING FOR DEVICE SIZES STARTS HERE 
    ===============  */
 
+   /* HOME PAGE IS RESPONSIVE TO MULTIPLE DEVICES AS REQUIRED */
 /* Small devices (portrait tablets and large phones, 300px and up) */
 @media only screen and (max-width: 400px) {
   h1,
