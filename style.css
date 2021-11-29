@@ -339,11 +339,6 @@ li:hover .dropdown {
 
 .payment-button {
   margin-top: 5rem;
-  margin-left: 40vw;
-  margin-right: 40vw;
-}
-
-.payment-button button {
   margin-left: 44vw;
   margin-right: 40vw;
 }
