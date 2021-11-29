@@ -44,7 +44,7 @@ header h1 {
   font-size: 6.25vw;
 }
 
-/* Wrapper for home page header */
+/* Wrapper for home page header starts */
 
 .welcome-wrapper {
   position: relative;
@@ -57,13 +57,20 @@ header h1 {
 .welcome-wrapper h1 {
   margin-top: 9vw;
 }
+/* Wrapper for home page header ends */
 
-/* Wrapper for headers on all other pages */
+/* Wrapper for headers on all other pages starts */
 
 .header-wrapper {
   position: relative;
-  margin: auto
+  margin: auto;
 }
+
+.header-wrapper h1 {
+  font-size: 7.25vw;
+}
+
+/* Wrapper for headers on all other pages ends*/
 
 .logo {
   position: absolute;
@@ -227,13 +234,12 @@ header h2 {
 }
 
 .nav-list2 {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   font-size: 1.25em;
 }
 
 .nav-list2 ul {
   list-style-type: none;
-
 }
 
 .nav-list2 li {
@@ -255,11 +261,9 @@ header h2 {
 
 .nav-list2 ul li ul {
   min-width: 3rem;
-  position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
   left: 0;
-  display: none;
 }
 
 .nav-list2 ul li ul li {
@@ -345,12 +349,12 @@ li:hover .dropdown {
 .payment-button {
   margin-top: 5rem;
   margin-left: 40vw;
-  margin-right: 40vw; 
+  margin-right: 40vw;
 }
 
 .payment-button button {
   margin-left: 44vw;
-  margin-right: 40vw; 
+  margin-right: 40vw;
 }
 
 /* ===============
@@ -380,11 +384,16 @@ li:hover .dropdown {
 
 .dark-2column .column1 h2 {
   font-size: 2.5em;
+  padding-bottom: 1.5rem;
 }
 
 .dark-2column .column1 h3 {
   font-size: 2.25em;
   margin-bottom: 0.4rem;
+}
+
+.dark-2column .column1 ul {
+  padding-bottom: 1.5rem;
 }
 
 .dark-2column .column1 ul li {
@@ -424,13 +433,15 @@ li:hover .dropdown {
   width: 100%;
 }
 .light-2column .column1 {
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: 50%;
   text-align: center;
+
 }
 
 .light-2column .column1 h2 {
-  font-size: 2.5em;
+  font-size: 2.25em;
+  padding-bottom: 1.5rem;
 }
 
 .light-2column .column1 h3 {
@@ -438,14 +449,19 @@ li:hover .dropdown {
   margin-bottom: 0.4rem;
 }
 
+.light-2column .column1 ul {
+  padding-bottom: 1.5rem;
+}
+
 .light-2column .column1 ul li {
   font-size: 1.25em;
+  list-style-type: none;
 }
 
 .light-2column .column1 p {
-  list-style-type: none;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 1.25em;
 }
 
@@ -454,13 +470,13 @@ li:hover .dropdown {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-
+/* 
 .light-2column ul li {
   list-style-type: none;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 1.25em;
-}
+} */
 
 /* ===============
    LIGHT COLOURED 2 COLUMN LAYOUT FOR ALL PAGES ENDS HERE
@@ -509,6 +525,10 @@ li:hover .dropdown {
   padding-bottom: 1rem;
 }
 
+.home-amenities .card {
+  height: auto;
+}
+
 /* Cards within Amenities Section */
 
 /* Columns side by side */
@@ -546,7 +566,6 @@ li:hover .dropdown {
   clear: both;
   display: table;
 }
-
 
 /* ===============
    LIGHT COLOURED2 CARD LAYOUT FOR CUSTOMER TESTIMONIALS SECTION ON HOME PAGE STARTS HERE
@@ -594,7 +613,7 @@ li:hover .dropdown {
 
 .light-2cards .cardp {
   height: auto;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -604,12 +623,9 @@ li:hover .dropdown {
 }
 
 .light-2cards .cardp ul li {
-  font-size: 1.25em;
-}
-
-.light-2cards .cardp ul li {
   text-align: left;
   list-style-type: circle;
+  font-size: 1.25em;
 }
 
 .light-2cards .cardp::after {
@@ -640,6 +656,8 @@ li:hover .dropdown {
 .text-block h2 {
   font-size: 2.5em;
   color: #f7eade;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-block p {
@@ -722,17 +740,19 @@ li:hover .dropdown {
 }
 
 .dark-2cards .cardp {
-  padding: 0 1rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
-.dark-2cards .cardp ul li {
+.dark-2cards .cardp p {
   font-size: 1.25em;
+  padding-bottom: 1rem;
 }
 
 .dark-2cards .cardp ul li {
   text-align: left;
   list-style-type: circle;
+  font-size: 1em;
 }
 
 .dark-2cards .cardp ul li a {
@@ -750,6 +770,36 @@ li:hover .dropdown {
   clear: both;
   display: table;
 }
+
+/* Cards for Amenities */
+
+.things-amenities {
+  background-color: #f7eade;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.things-amenities h2 {
+  font-size: 3.5em;
+  padding-bottom: 1rem;
+}
+
+.things-amenities .column {
+  height: auto;
+  max-height: 700px;
+}
+
+.things-amenities .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.things-amenities .container p {
+  padding-bottom: 2rem;
+}
+
 /* ===============
    THINGS TO DO PAGE STYLING ENDS HERE
    =============== */
@@ -762,10 +812,13 @@ li:hover .dropdown {
 GOOGLE MAPS BAR STYLING STARTS HERE */
 
 .maps-container {
-  margin-top: 3.5rem;
   padding-bottom: 30%;
   position: relative;
   height: 0;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .maps-container iframe {
@@ -790,7 +843,7 @@ GOOGLE MAPS BAR STYLING ENDS HERE
   background-color: #2a2828;
   justify-content: center;
   max-width: 100vw;
-  padding: 10px 300px;
+  padding: 50px 200px;
 }
 
 .form-container h2 {
@@ -839,7 +892,6 @@ input[type="submit"]:hover {
   padding: 35px;
   margin: 0;
   width: 800px;
-  margin-left: 100px;
 }
 
 .wrapper-button {
@@ -916,10 +968,11 @@ fieldset {
   color: #f7eade;
   text-align: center;
   margin: 0;
-  height: 47vh;
+  height: 45vh;
 }
 
 .main-cta h2 {
+  padding-top: 2rem;
   text-align: left;
   margin-left: 5rem;
   font-size: 2.5em;
@@ -930,6 +983,7 @@ fieldset {
   text-align: left;
   margin-left: 5rem;
   font-size: 1.25em;
+  padding-bottom: 2rem;
 }
 
 /* ===============
@@ -967,7 +1021,6 @@ fieldset {
   margin-bottom: 1rem;
   font-weight: bold;
   font-size: 1.75em;
-  
 }
 
 .footer-dark ul {
