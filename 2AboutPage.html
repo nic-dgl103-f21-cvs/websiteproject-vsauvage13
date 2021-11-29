@@ -12,44 +12,39 @@
     rel="stylesheet"
   />
   <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
-  <script src="https://kit.fontawesome.com/d24006029f.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/d24006029f.js"
+    crossorigin="anonymous"
+  ></script>
   <!-- Linking Facebook and Instagram Icons from fontawesome.com -->
   <style>
     header {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      overflow: hidden;
-      z-index: -1;
-      background-position: center center;
-      display: flex;
       background-image: url(images/2AboutUs/valentin-wallet-X-zf2co-ROM-unsplash.png);
-      background-size: cover;
-      background-attachment: fixed;
+      height: 100vh;
     }
   </style>
   <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
     <div class="header">
       <header>
-        <div>
+        <div class="logo">
           <a href="index.html"
             ><img
               src="images/1Index/AllPages/logo.gif"
               alt="Elfinlau Logo"
-              width="175rem"
+              width="150px"
             />
           </a>
         </div>
-        <!-- logo is here -->
-        <div class="herotextformat">
+        <!-- Website logo is here -->
+        <wrapper class="header-wrapper">
           <h1>About Us</h1>
           <!-- Hero image Text  -->
-        </div>
+        </wrapper>
       </header>
     </div>
     <!-- Socials horizontal nav bar below-->
-    <nav class="nav1-container">
+    <div class="nav1-container">
       <ul class="nav-list1">
         <li class="hvr-icon-hang">
           <div class="hvr-icon">
@@ -66,9 +61,11 @@
           </div>
         </li>
       </ul>
-    </nav>
+    </div>
     <!-- Horizontal dropdown navigation bar for websites pages below-->
+    <div class="nav2-container">
     <nav>
+      <div class="menu-label">Menu</div>
       <ul class="nav-list2">
         <li><a href="2AboutPage.html">About Us</a></li>
         <li>
@@ -86,6 +83,7 @@
         <li><a href="3BookingPage.html">Book Now</a></li>
       </ul>
     </nav>
+  </div>
     <main>
       <!-- Our Story section starts here -->
       <section class="text-block">
@@ -231,13 +229,21 @@
             <!-- Google Maps Link -->
           </div>
         </div>
-        <div class="footer-socials-container">
-          <ul class="footer-socials">
-            <li>
-              <a href="https://www.facebook.com/elfinlau"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <div>
+          <ul class="footer-socials-container">
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.facebook.com/elfinlau"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
-            <li>
-              <a href="https://www.instagram.com/2elfinlau/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.instagram.com/2elfinlau/?hl=en"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
           </ul>
         </div>

@@ -18,40 +18,38 @@
       crossorigin="anonymous"
     ></script>
     <!-- Linking Facebook and Instagram Icons from fontawesome.com -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking menu icon for smaller screens from font-awesome.com -->
     <style>
       header {
-        width: 100vw;
         height: 100vh;
-        position: relative;
-        overflow: hidden;
-        z-index: -1;
-        background-position: center center;
-        display: flex;
         background-image: url(images/1Index/vidar-nordli-mathisen-641pLhGEEyg-unsplash.png);
-        background-size: cover;
-        background-attachment: fixed;
       }
     </style>
     <!-- Inline style sheet formats hero image for individual pages. -->
     <!-- *** PERHAPS WE COULD GO OVER PUTTING THE NAV BAR AT THE TOP OF THE PAGE AGAIN OR I COULD ADJUST THE HEIGHT OF THE PICTURE SO YOU CAN SEE THE NAV BAR ON THE LANDING PAGE ***-->
   </head>
+
   <body>
     <header>
-      <a href="index.html"
-        ><img
-          src="images/1Index/AllPages/logo.gif"
-          alt="Elfinlau Logo"
-          width="175rem"
-        />
-        <!-- ***INDEX LINK DOES NOT WORK AND LOGO/BUTTONS IN HEADER ARE NOT CLICKABLE. THINKING IT HAS SOMETHING TO DO WITH A NESTING THING OR A Z-INDEX PROBLEM BUT NOT SURE HOW TO TROUBLESHOOT*** -->
-      </a>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="images/1Index/AllPages/logo.gif"
+            alt="Elfinlau Logo"
+            width="150px"
+          />
+        </a>
+      </div>
       <!-- Website Logo is above -->
-      <div>
+      <wrapper class="welcome-wrapper">
         <h1>Welcome to Paradise</h1>
         <h2>
           Experience a private island getaway to refresh, ground, and relax.
         </h2>
-        <!-- *** WANT TO CENTER H1 AND H2 IN AN EFFICIENT WAY BUT SEEMS TO BE FINICKY *** -->
         <!-- Hero image Text  -->
         <form style="display: inline" action="2AboutPage.html" method="get">
           <button class="button-50">Learn More</button>
@@ -60,9 +58,7 @@
           <button class="button-50">Book Now</button>
         </form>
         <!-- CTA Buttons -->
-      </div>
-
-      <!-- *** HOW TO MAKE CONTAINER THAT CONTAINS H1, H2 AND BUTTONS RESPONSIVE, PERHAPS MAKING A CLASS ON THE DIV THAT LIMITS THE WIDTH? *** -->
+      </wrapper>
     </header>
     <!-- Socials horizontal nav bar below -->
     <div class="nav1-container">
@@ -82,32 +78,31 @@
           </div>
         </li>
       </ul>
-      <!-- <div class="photo-overlay"></div> -->
-      <!-- aask sarah about -->
     </div>
     <!-- Horizontal dropdown navigation bar for websites pages below-->
-    <nav>
-      <ul class="nav-list2">
-        <li><a href="2AboutPage.html">About Us</a></li>
-        <li>
-          <a href="3BookingPage.html">Booking</a>
-          <ul class="dropdown">
-            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-            <li><a href="10Detox.html">5 Day Detox</a></li>
-          </ul>
-        </li>
-        <li><a href="4ThingsToDo.html"> Explore</a></li>
-        <li><a href="5ContactUsPage.html">Contact Us</a></li>
-        <li><a href="3BookingPage.html">Book Now</a></li>
-      </ul>
-    </nav>
+    <div class="nav2-container">
+      <nav>
+        <div class="menu-label">Menu</div>
+        <ul class="nav-list2">
+          <li><a href="2AboutPage.html">About Us</a></li>
+          <li>
+            <a href="3BookingPage.html">Booking</a>
+            <ul class="dropdown">
+              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+              <li><a href="10Detox.html">5 Day Detox</a></li>
+            </ul>
+          </li>
+          <li><a href="4ThingsToDo.html"> Explore</a></li>
+          <li><a href="5ContactUsPage.html">Contact Us</a></li>
+          <li><a href="3BookingPage.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
-      <!-- div elements inside of sections and div elements for each piece that is a seperate column div not needed for everything toitles outside of div elements-->
-
       <div class="dark-2column">
         <div class="column1">
           <h2>Plan Your Next Adventure</h2>
@@ -325,7 +320,7 @@
                   Lake Trail”. Even more amazing was having Ray make a sign for
                   it the next day. So thank you so much for everything!
                 </p>
-                <p>Andréanne, Gilles, Karine, Salomé and Karl</p>
+                <h4>Andréanne, Gilles, Karine, Salomé and Karl</h4>
               </div>
             </div>
           </div>
@@ -346,7 +341,7 @@
                   have built. We are looking forward to seeing you soon,
                   hopefully, very soon. Until then take care.
                 </p>
-                <p>Bal and Harish</p>
+                <h4>Bal and Harish</h4>
               </div>
             </div>
           </div>
@@ -409,8 +404,8 @@
             <!-- Google Maps Link -->
           </div>
         </div>
-        <div class="footer-socials-container">
-          <ul class="footer-socials">
+        <div>
+          <ul class="footer-socials-container">
             <li class="hvr-icon-hang">
               <div class="hvr-icon">
                 <a href="https://www.facebook.com/elfinlau"

@@ -12,42 +12,39 @@
     rel="stylesheet"
   />
   <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
-  <script src="https://kit.fontawesome.com/d24006029f.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/d24006029f.js"
+    crossorigin="anonymous"
+  ></script>
   <!-- Linking Facebook and Instagram Icons from fontawesome.com -->
   <style>
     header {
-      width: 100vw;
       height: 100vh;
-      position: relative;
-      overflow: hidden;
-      z-index: -1;
-      background-position: center center;
-      display: flex;
       background-image: url(images/5ContactUs/nathan-dumlao-Xe7WJc6ZV5k-unsplash.png);
-      background-size: cover;
-      background-attachment: fixed;
     }
   </style>
   <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
-    <header>
-      <div>
-        <a href="index.html"
-          ><img
-            src="images/1Index//AllPages/logo.gif"
-            alt="Elfinlau Logo"
-            width="175rem"
-          />
-        </a>
-      </div>
-      <!-- logo is here -->
-      <div class="herotextformat">
-        <h1>Get In Touch</h1>
-        <!-- Hero image Text  -->
-      </div>
-    </header>
+    <div class="header">
+      <header>
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/1Index/AllPages/logo.gif"
+              alt="Elfinlau Logo"
+              width="150px"
+            />
+          </a>
+        </div>
+        <!-- logo is here -->
+        <wrapper class="header-wrapper">
+          <h1>Get In Touch</h1>
+          <!-- Hero image Text  -->
+        </wrapper>
+      </header>
+    </div>
     <!-- Socials horizontal nav bar below -->
-    <nav class="nav1-container">
+    <div class="nav1-container">
       <ul class="nav-list1">
         <li class="hvr-icon-hang">
           <div class="hvr-icon">
@@ -64,8 +61,9 @@
           </div>
         </li>
       </ul>
-    </nav>
+    </div>
     <!-- Horizontal dropdown navigation bar for websites pages below-->
+    <div class="nav2-container">
     <nav>
       <ul class="nav-list2">
         <li><a href="2AboutPage.html">About Us</a></li>
@@ -84,6 +82,7 @@
         <li><a href="3BookingPage.html">Book Now</a></li>
       </ul>
     </nav>
+    </div>
     <main>
       <!-- Google Maps Bar -->
       <div class="maps-container">
@@ -110,89 +109,89 @@
         <img
           src="images/5ContactUs/mischa-bachmann-rWLDSCo8p8g-unsplash.jpg"
           alt="Elfinalu Resort from afar. Views of the mountains in the background and the cabins along the water."
-          style="width: 50%; height: 100%; margin: 0%; object-fit: cover;"
+          style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
           class="responsive"
         />
         <!-- object fit does not work in Internet Explorer. -->
       </div>
 
       <div class="form-container">
-          <article>
-            <div class="wrapper-form">
-              <h2>Contact Form</h2>
-              <form
-                method="post"
-                action="https://learndigital.dev/programs/dgl103-form.php"
+        <article>
+          <div class="wrapper-form">
+            <h2>Contact Form</h2>
+            <form
+              method="post"
+              action="https://learndigital.dev/programs/dgl103-form.php"
+            >
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ex: Mike"
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Ex: Smith"
+              />
+
+              <label for="email"
+                >Email <span class="label-required">* (required)</span></label
               >
-                <label for="fname">First Name</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex: mike@yahoo.com"
+                required
+              />
+
+              <label for="subject">Message Subject</label>
+              <select id="subject" name="subject">
+                <option value="cabins">Cabins</option>
+                <option value="packages">Packages</option>
+                <option value="booking">Room & Booking Features</option>
+                <option value="experiences">Experiences</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please tell us a little about your enquiry"
+                style="height: 200px"
+              ></textarea>
+              <fieldset>
+                <legend>
+                  I want to receive information on upcoming deals, events, and
+                  news from Elfinlau.
+                </legend>
                 <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Ex: Mike"
+                  type="radio"
+                  id="w22"
+                  name="receiveinformation"
+                  value="Yes"
                 />
-
-                <label for="lname">Last Name</label>
+                <label for="w22">Yes</label><br />
                 <input
-                  type="text"
-                  id="lname"
-                  name="lastname"
-                  placeholder="Ex: Smith"
+                  type="radio"
+                  id="f22"
+                  name="receiveinformation"
+                  value="No"
                 />
-
-                <label for="email"
-                  >Email <span class="label-required">* (required)</span></label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Ex: mike@yahoo.com"
-                  required
-                />
-
-                <label for="subject">Message Subject</label>
-                <select id="subject" name="subject">
-                  <option value="cabins">Cabins</option>
-                  <option value="packages">Packages</option>
-                  <option value="booking">Room & Booking Features</option>
-                  <option value="experiences">Experiences</option>
-                </select>
-
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Please tell us a little about your enquiry"
-                  style="height: 200px"
-                ></textarea>
-                <fieldset>
-                  <legend>
-                    I want to receive information on upcoming deals, events, and
-                    news from Elfinlau.
-                  </legend>
-                  <input
-                    type="radio"
-                    id="w22"
-                    name="receiveinformation"
-                    value="Yes"
-                  />
-                  <label for="w22">Yes</label><br />
-                  <input
-                    type="radio"
-                    id="f22"
-                    name="receiveinformation"
-                    value="No"
-                  />
-                  <label for="f22">No</label><br />
-                </fieldset>
-                <div class="wrapper-button">
-                  <input type="reset" value="Reset" />
-                  <input type="submit" value="Submit" />
-                </div>
-              </form>
-            </div>
-          </article>
+                <label for="f22">No</label><br />
+              </fieldset>
+              <div class="wrapper-button">
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </article>
       </div>
       <!-- CTA Section starts here -->
       <div class="main-cta">
@@ -258,13 +257,21 @@
             <!-- Google Maps Link -->
           </div>
         </div>
-        <div class="footer-socials-container">
-          <ul class="footer-socials">
-            <li>
-              <a href="https://www.facebook.com/elfinlau"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <div>
+          <ul class="footer-socials-container">
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.facebook.com/elfinlau"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
-            <li>
-              <a href="https://www.instagram.com/2elfinlau/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.instagram.com/2elfinlau/?hl=en"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
           </ul>
         </div>

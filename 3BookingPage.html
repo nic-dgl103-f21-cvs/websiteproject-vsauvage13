@@ -12,43 +12,40 @@
     rel="stylesheet"
   />
   <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
-  <script src="https://kit.fontawesome.com/d24006029f.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/d24006029f.js"
+    crossorigin="anonymous"
+  ></script>
   <!-- Linking Facebook and Instagram Icons from fontawesome.com -->
   <style>
     header {
-      width: 100vw;
       height: 100vh;
-      position: relative;
-      overflow: hidden;
-      z-index: -1;
-      background-position: center center;
-      display: flex;
       background-image: url(images/3Booking/kym-ellis-zyeUYocFqqY-unsplash.png);
-      background-size: cover;
-      background-attachment: fixed;
     }
     /* MOVE PHOTO SLIGHTLY TO THE LEFT */
   </style>
   <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
-    <header>
-      <div>
-        <a href="index.html"
-          ><img
-            src="images/1Index//AllPages/logo.gif"
-            alt="Elfinlau Logo"
-            width="175rem"
-          />
-        </a>
-      </div>
-      <!-- logo is here -->
-      <div class="herotextformat">
-        <h1>Stay With Us</h1>
-        <!-- Hero image Text  -->
-      </div>
-    </header>
+    <div class="header">
+      <header>
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/1Index/AllPages/logo.gif"
+              alt="Elfinlau Logo"
+              width="150px"
+            />
+          </a>
+        </div>
+        <!-- logo is here -->
+        <wrapper class="header-wrapper">
+          <h1>Stay With Us</h1>
+          <!-- Hero image Text  -->
+        </wrapper>
+      </header>
+    </div>
     <!-- Socials horizontal nav bar below-->
-    <nav class="nav1-container">
+    <div class="nav1-container">
       <ul class="nav-list1">
         <li class="hvr-icon-hang">
           <div class="hvr-icon">
@@ -65,32 +62,34 @@
           </div>
         </li>
       </ul>
-    </nav>
+    </div>
     <!-- Horizontal dropdown navigation bar for websites pages below -->
     <!-- *** BOOKING NAV DROPDOWN DOESNT LOOK WORK WHEN PAGE IS CONDENSED PERHAPS I HAVE TO DO A MEDIA QUERIE? MAYBE WE CAN GO OVER MEDIA QUERIES FOR THIS PROJECT *ONLY ONE PAGE HAS TO HAVE THEM* on another note it seems that I acidentally deleted something in my nav bar css that stops the dropdown from dropping in a column, troubleshoot.  *** -->
-    <nav>
-      <ul class="nav-list2">
-        <li><a href="2AboutPage.html">About Us</a></li>
-        <li>
-          <a href="3BookingPage.html">Booking</a>
-          <ul class="dropdown">
-            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-            <li><a href="10Detox.html">5 Day Detox</a></li>
-          </ul>
-        </li>
-        <li><a href="4ThingsToDo.html"> Explore</a></li>
-        <li><a href="5ContactUsPage.html">Contact Us</a></li>
-        <li><a href="3BookingPage.html">Book Now</a></li>
-      </ul>
-    </nav>
+    <div class="nav2-container">
+      <nav>
+        <ul class="nav-list2">
+          <li><a href="2AboutPage.html">About Us</a></li>
+          <li>
+            <a href="3BookingPage.html">Booking</a>
+            <ul class="dropdown">
+              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+              <li><a href="10Detox.html">5 Day Detox</a></li>
+            </ul>
+          </li>
+          <li><a href="4ThingsToDo.html"> Explore</a></li>
+          <li><a href="5ContactUsPage.html">Contact Us</a></li>
+          <li><a href="3BookingPage.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <!-- Cabin section starts here -->
       <div class="booking-page">
         <div>
-          <h2 style="padding-top: 4.6rem;">Cabins</h2>
+          <h2 style="padding-top: 4.6rem">Cabins</h2>
           <!-- Homestead Cabin starts here -->
           <div class="dark-2column">
             <div class="column1">
@@ -119,13 +118,12 @@
           <!-- Homestead Cabin ends here -->
           <!-- Hummingbird Cabin starts here -->
           <div class="light-2column">
-
-              <img
-                src="images/7Hummingbird/andrew-slifkin-A3EhV5FOH5c-unsplash.png"
-                alt=""
-                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
-                class="responsive"
-              />
+            <img
+              src="images/7Hummingbird/andrew-slifkin-A3EhV5FOH5c-unsplash.png"
+              alt=""
+              style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+              class="responsive"
+            />
 
             <div class="column1">
               <h3>Hummingbird Cabin</h3>
@@ -165,13 +163,12 @@
               </form>
             </div>
 
-              <img
-                src="images/8Dragonfly/matthew-harris-yQoAlbuxb48-unsplash.png"
-                alt=""
-                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
-                class="responsive"
-              />
-
+            <img
+              src="images/8Dragonfly/matthew-harris-yQoAlbuxb48-unsplash.png"
+              alt=""
+              style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+              class="responsive"
+            />
           </div>
         </div>
         <!-- Dragonfly Cabin ends here -->
@@ -180,13 +177,12 @@
           <h2>Packages</h2>
           <!-- All of Elfinlau starts here -->
           <div class="dark-2column">
-
-              <img
-                src="images/9AllofElfinlau/kym-ellis-tq40ATQPbgY-unsplash.png"
-                alt=""
-                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
-                class="responsive"
-              />
+            <img
+              src="images/9AllofElfinlau/kym-ellis-tq40ATQPbgY-unsplash.png"
+              alt=""
+              style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+              class="responsive"
+            />
 
             <div class="column1">
               <h3>All of Elfinlau</h3>
@@ -217,13 +213,12 @@
               </form>
             </div>
 
-              <img
-                src="images/10Detox/reiseuhu-smu2o4QFx1E-unsplash.png"
-                alt=""
-                style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
-                class="responsive"
-              />
-
+            <img
+              src="images/10Detox/reiseuhu-smu2o4QFx1E-unsplash.png"
+              alt=""
+              style="width: 50%; height: 100%; margin: 0%; object-fit: cover"
+              class="responsive"
+            />
           </div>
           <!-- 5 Day Detox ends here -->
         </div>
@@ -352,13 +347,21 @@
             <!-- Google Maps Link -->
           </div>
         </div>
-        <div class="footer-socials-container">
-          <ul class="footer-socials">
-            <li>
-              <a href="https://www.facebook.com/elfinlau"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <div>
+          <ul class="footer-socials-container">
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.facebook.com/elfinlau"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
-            <li>
-              <a href="https://www.instagram.com/2elfinlau/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.instagram.com/2elfinlau/?hl=en"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
           </ul>
         </div>

@@ -12,43 +12,40 @@
     rel="stylesheet"
   />
   <!-- Linking Google fonts above-there are 3 in use: Mohave: weight 300;400;700 & Roboto: weight 100;300;400 -->
-  <script src="https://kit.fontawesome.com/d24006029f.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/d24006029f.js"
+    crossorigin="anonymous"
+  ></script>
   <!-- Linking Facebook and Instagram Icons from fontawesome.com -->
   <style>
     header {
-      width: 100vw;
       height: 100vh;
-      position: relative;
-      overflow: hidden;
-      z-index: -1;
-      background-position: center center;
-      display: flex;
       background-image: url(images/4ThingsToDo/samuele-errico-piccarini-MCroQe9ykmM-unsplash.png);
-      background-size: cover;
-      background-attachment: fixed;
     }
     /* LOOK INTO FLIPPING HORIZONTALLY THE BACKGROUND PHOTO */
   </style>
   <!-- Inline style sheet formats hero image for individual pages. -->
   <body>
-    <header>
-      <div>
-        <a href="index.html"
-          ><img
-            src="images/1Index//AllPages/logo.gif"
-            alt="Elfinlau Logo"
-            width="175rem"
-          />
-        </a>
-      </div>
-      <!-- logo is here -->
-      <div class="herotextformat">
-        <h1>Unforgettable Experiences</h1>
-                  <!-- Hero image Text  -->
-      </div>
-    </header>
+    <div class="header">
+      <header>
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/1Index/AllPages/logo.gif"
+              alt="Elfinlau Logo"
+              width="150px"
+            />
+          </a>
+        </div>
+        <!-- logo is here -->
+        <wrapper class="header-wrapper">
+          <h1>Unforgettable Experiences</h1>
+          <!-- Hero image Text  -->
+        </wrapper>
+      </header>
+    </div>
     <!-- Socials horizontal nav bar below -->
-    <nav class="nav1-container">
+    <div class="nav1-container">
       <ul class="nav-list1">
         <li class="hvr-icon-hang">
           <div class="hvr-icon">
@@ -65,31 +62,33 @@
           </div>
         </li>
       </ul>
-    </nav>
+    </div>
     <!-- Horizontal dropdown navigation bar for websites pages below-->
-    <nav>
-      <ul class="nav-list2">
-        <li><a href="2AboutPage.html">About Us</a></li>
-        <li>
-          <a href="3BookingPage.html">Booking</a>
-          <ul class="dropdown">
-            <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
-            <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
-            <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
-            <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
-            <li><a href="10Detox.html">5 Day Detox</a></li>
-          </ul>
-        </li>
-        <li><a href="4ThingsToDo.html"> Explore</a></li>
-        <li><a href="5ContactUsPage.html">Contact Us</a></li>
-        <li><a href="3BookingPage.html">Book Now</a></li>
-      </ul>
-    </nav>
+    <div class="nav2-container">
+      <nav>
+        <ul class="nav-list2">
+          <li><a href="2AboutPage.html">About Us</a></li>
+          <li>
+            <a href="3BookingPage.html">Booking</a>
+            <ul class="dropdown">
+              <li><a href="6HomesteadCabin.html">Homestead Cabin</a></li>
+              <li><a href="7HummingBirdCabin.html">Hummingbird Cabin</a></li>
+              <li><a href="8DragonflyCabin.html">Dragonfly Cabin</a></li>
+              <li><a href="9AllOfElfinlau.html">All of Elfinlau</a></li>
+              <li><a href="10Detox.html">5 Day Detox</a></li>
+            </ul>
+          </li>
+          <li><a href="4ThingsToDo.html"> Explore</a></li>
+          <li><a href="5ContactUsPage.html">Contact Us</a></li>
+          <li><a href="3BookingPage.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <div>
         <!-- *** CARDS DON'T WRAP PROPERLY WHEN PAGE IS SIZED DOWN, AGAIN PERHAPS A MEDIA QUERIE? *** -->
         <section class="home-amenities">
-          <h2  style="padding-top: 3rem;">Resort Amenities</h2>
+          <h2 style="padding-top: 3rem">Resort Amenities</h2>
           <div>
             <div class="row">
               <div class="column">
@@ -240,7 +239,7 @@
           </div>
         </section>
       </div>
-<!-- *** IS THERE A WAY TO MAKE THE CARDS A FIXED SIZE WHILE ALSO BEING RESPONSIVE SO THAT THE BOXES ARE THE SAME SIZE WHEN THE PAGE IS RESIZED REGARDLESS OF CONTENT INSIDE? *** -->
+      <!-- *** IS THERE A WAY TO MAKE THE CARDS A FIXED SIZE WHILE ALSO BEING RESPONSIVE SO THAT THE BOXES ARE THE SAME SIZE WHEN THE PAGE IS RESIZED REGARDLESS OF CONTENT INSIDE? *** -->
       <div>
         <section class="dark-2cards-container">
           <h2>On Harrison Lake</h2>
@@ -384,13 +383,21 @@
             <!-- Google Maps Link -->
           </div>
         </div>
-        <div class="footer-socials-container">
-          <ul class="footer-socials">
-            <li>
-              <a href="https://www.facebook.com/elfinlau"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <div>
+          <ul class="footer-socials-container">
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.facebook.com/elfinlau"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
-            <li>
-              <a href="https://www.instagram.com/2elfinlau/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li class="hvr-icon-hang">
+              <div class="hvr-icon">
+                <a href="https://www.instagram.com/2elfinlau/?hl=en"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
             </li>
           </ul>
         </div>
