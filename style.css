@@ -1114,7 +1114,7 @@ fieldset {
    STYLING FOR DEVICE SIZES STARTS HERE 
    ===============  */
 
-   /* HOME PAGE IS RESPONSIVE TO MULTIPLE DEVICES AS REQUIRED */
+/* HOME PAGE IS RESPONSIVE TO MULTIPLE DEVICES AS REQUIRED */
 /* Small devices (portrait tablets and large phones, 300px and up) */
 @media only screen and (max-width: 400px) {
   h1,
@@ -1123,7 +1123,9 @@ fieldset {
     font-size: 16px;
   }
 
- .menu-label, .nav1-container, .nav2-container,
+  .menu-label,
+  .nav1-container,
+  .nav2-container,
   .nav-list1,
   .hvr-icon-hang,
   .hvr-icon {
