@@ -1123,23 +1123,22 @@ fieldset {
     font-size: 16px;
   }
 
-  .nav1-container,
+ .menu-label, .nav1-container, .nav2-container,
   .nav-list1,
   .hvr-icon-hang,
   .hvr-icon {
     display: none;
   }
 
-  nav .menu-label,
   nav .toggle,
   .responsive-map {
     display: none;
   }
 
-  nav ul {
-    display: flex;
-    flex-direction: row;
+  .welcome-wrapper {
+    padding-top: 5rem;
   }
+
   nav ul li {
     padding-right: 8px;
   }
