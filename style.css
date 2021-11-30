@@ -1039,6 +1039,10 @@ fieldset {
   padding-right: 35vw;
   padding-bottom: 35vh;
   position: relative;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .responsive-map iframe {
