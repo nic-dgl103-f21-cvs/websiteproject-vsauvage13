@@ -870,6 +870,7 @@ input[type="submit"]:hover {
   padding: 35px;
   margin: 0;
   width: 800px;
+  margin: auto;
 }
 
 .wrapper-button {
