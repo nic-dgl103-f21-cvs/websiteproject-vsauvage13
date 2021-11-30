@@ -74,6 +74,10 @@ header h1 {
 .logo {
   position: absolute;
   z-index: 3;
+  width: 11vw;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  opacity: 95%;
 }
 
 .buttons-list {
